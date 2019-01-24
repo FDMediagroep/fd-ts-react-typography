@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Typography renders h1 correctly 1`] = `
+<h1
+  className="fd-h1"
+/>
+`;
+
+exports[`Typography renders h1 correctly 2`] = `
+<h1
+  className="fd-h1 article-longread-persoonlijk"
+/>
+`;
