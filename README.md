@@ -16,8 +16,11 @@ After the build succeeded you can open `dist/demo.html` with your webbrowser.
 
 # Usage
 ```
-import {H1} from '@fdmg/fd-typography';
+import {H1, H3} from '@fdmg/fd-typography';
 ...
 <H1>.fd-h1</H1>
 <H1 className="article-longread">.fd-h1.article-longread</H1>
+
+<H3 className="card">.fd-h3.card</H3>
+<H3>.fd-h3</H3>
 ```

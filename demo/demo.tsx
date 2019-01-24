@@ -1,11 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {H1} from "../src/typography";
+import {H1, H3} from "../src/typography";
 import { createGlobalStyle } from 'styled-components';
-
-function handleClick() {
-    alert('clicked');
-}
 
 const GlobalStyles = createGlobalStyle`
     body {
@@ -29,5 +25,8 @@ ReactDOM.render(<>
         <H1 className="cover-teaser">.fd-h1.cover-teaser (persoonlijk)</H1>
         <H1 className="square-teaser">.fd-h1.square-teaser</H1>
         <H1 className="my-news-aside">.fd-h1.my-news-aside</H1>
+
+        <H3 className="card">.fd-h3.card</H3>
+        <H3>.fd-h3 (tabs)</H3>
     </>,
     document.getElementById('root'));

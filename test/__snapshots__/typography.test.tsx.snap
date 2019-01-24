@@ -3,11 +3,31 @@
 exports[`Typography renders h1 correctly 1`] = `
 <h1
   className="fd-h1"
-/>
+>
+  Default
+</h1>
 `;
 
 exports[`Typography renders h1 correctly 2`] = `
 <h1
   className="fd-h1 article-longread-persoonlijk"
-/>
+>
+  article-longread-persoonlijk
+</h1>
+`;
+
+exports[`Typography renders h3 correctly 1`] = `
+<h3
+  className="fd-h3"
+>
+  Default
+</h3>
+`;
+
+exports[`Typography renders h3 correctly 2`] = `
+<h3
+  className="fd-h3 card"
+>
+  card
+</h3>
 `;
