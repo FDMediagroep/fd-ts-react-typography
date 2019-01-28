@@ -14,11 +14,12 @@ export default class H3 extends PureComponent<any, any> {
 
 export const H3Style = createGlobalStyle`
 .fd-h3 {
+    margin: 0;
+    padding: 0;
     font-family: 'ProximaNovaBold', sans-serif;
     color: #49a4a2;
     box-sizing: border-box;
     display: block;
-    margin: 0;
     font-size: 1rem;
     line-height: 1.1em;
 

@@ -14,6 +14,8 @@ export default class H1 extends PureComponent<any, any> {
 
 export const H1Style = createGlobalStyle`
 .fd-h1 {
+    margin: 0;
+    padding: 0;
     font-family: 'ArnhemProBold', serif;
     line-height: 1.08em;
     width: 88%;
