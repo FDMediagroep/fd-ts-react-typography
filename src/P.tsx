@@ -6,7 +6,7 @@ export default class P extends PureComponent<any, any> {
         return (
             <>
                 <GlobalStyle/>
-                <p {...this.props} className={`fd-paragraph${this.props.className ? ` ${this.props.className}`: ''}`}>{this.props.children}</p>
+                <p {...this.props} className={`fd-paragraph${this.props.className ? ` ${this.props.className}` : ''}`}>{this.props.children}</p>
             </>
         );
     }
@@ -75,4 +75,4 @@ const GlobalStyle = createGlobalStyle`
     }
 `;
 
-export {GlobalStyle as PStyle}
+export {GlobalStyle as PStyle};

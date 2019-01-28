@@ -6,7 +6,7 @@ export default class H2 extends PureComponent<any, any> {
         return (
             <>
                 <GlobalStyle/>
-                <h2 {...this.props} className={`fd-h2${this.props.className ? ` ${this.props.className}`: ''}`}>{this.props.children}</h2>
+                <h2 {...this.props} className={`fd-h2${this.props.className ? ` ${this.props.className}` : ''}`}>{this.props.children}</h2>
             </>
         );
     }
