@@ -37,6 +37,7 @@ const GlobalStyle = createGlobalStyle`
             a {
                 color: #49a4a2;
                 cursor: pointer;
+                text-decoration: none;
             }
         }
         &.article-longread {
@@ -71,6 +72,7 @@ const GlobalStyle = createGlobalStyle`
             a {
                 color: #f05031;
                 cursor: pointer;
+                text-decoration: none;
             }
         }
 
