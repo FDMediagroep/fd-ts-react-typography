@@ -29,9 +29,9 @@ const GlobalStyle = createGlobalStyle`
         padding: 0.375rem 0;
         font-family: 'ProximaNovaRegular', sans-serif;
         line-height: 1.2em;
-        font-size: 13px;
+        font-size: 0.8125rem;
         @media only screen and (min-width: 641px) {
-            font-size: 14px;
+            font-size: 0.875rem;
         }
         .photographer {
             margin-left: 5px;
@@ -45,9 +45,9 @@ const GlobalStyle = createGlobalStyle`
         padding: 0.375rem 0;
         font-family: 'ProximaNovaRegular', sans-serif;
         line-height: 1.2em;
-        font-size: 13px;
+        font-size: 0.8125rem;
         @media only screen and (min-width: 641px) {
-            font-size: 14px;
+            font-size: 0.875rem;
         }
         .photographer {
             margin-left: 5px;

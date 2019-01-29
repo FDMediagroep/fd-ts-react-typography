@@ -1,5 +1,43 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Typography renders figcaption correctly 1`] = `
+<figcaption
+  caption="caption text"
+  className="fd-figcaption article-inline"
+  photographer="source: kitchensink"
+>
+  <span
+    className="caption"
+  >
+    caption text
+  </span>
+  <span
+    className="photographer"
+  >
+    source: kitchensink
+  </span>
+</figcaption>
+`;
+
+exports[`Typography renders figcaption correctly 2`] = `
+<figcaption
+  caption="caption text"
+  className="fd-figcaption article-longread-inline"
+  photographer="source: kitchensink"
+>
+  <span
+    className="caption"
+  >
+    caption text
+  </span>
+  <span
+    className="photographer"
+  >
+    source: kitchensink
+  </span>
+</figcaption>
+`;
+
 exports[`Typography renders h1 correctly 1`] = `
 <h1
   className="fd-h1"

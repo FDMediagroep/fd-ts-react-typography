@@ -1,5 +1,5 @@
 import TestRenderer from 'react-test-renderer';
-import {H1, H3, H2, P} from '../src/typography';
+import {H1, H3, H2, P, FigCaption} from '../src/typography';
 import React from 'react';
 
 describe('Typography', () => {
@@ -29,6 +29,13 @@ describe('Typography', () => {
         expect(p.toJSON()).toMatchSnapshot();
         p = TestRenderer.create(<P className="article">article</P>);
         expect(p.toJSON()).toMatchSnapshot();
+    });
+
+    test('renders figcaption correctly', () => {
+        let figcaption = TestRenderer.create(<FigCaption className="article-inline" caption="caption text" photographer="source: kitchensink"/>);
+        expect(figcaption.toJSON()).toMatchSnapshot();
+        figcaption = TestRenderer.create(<FigCaption className="article-longread-inline" caption="caption text" photographer="source: kitchensink"/>);
+        expect(figcaption.toJSON()).toMatchSnapshot();
     });
 
 });
