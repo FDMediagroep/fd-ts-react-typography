@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {H1, H3, P, H2} from "../src/typography";
+import {H1, H3, P, H2, FigCaption} from "../src/typography";
 import { createGlobalStyle } from 'styled-components';
-import FigCaption from '../src/FigCaption';
 
 const GlobalStyles = createGlobalStyle`
     body {
