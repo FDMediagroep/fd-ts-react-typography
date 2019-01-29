@@ -25,6 +25,13 @@ const GlobalStyle = createGlobalStyle`
             font-family: 'ArnhemProBold', serif;
         }
 
+        &.article-number-frame {
+            font-weight: 400;
+            color: #49a4a2;
+            font-size: 3.125rem;
+            font-family: 'ConsortWebRegular', serif;
+            line-height: 1em;
+        }
         &.article-longread-number-frame {
             font-weight: 400;
             color: #f05031;

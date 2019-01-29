@@ -23,16 +23,26 @@ export const H3Style = createGlobalStyle`
     line-height: 1.1em;
 
     &.article-subheader {
-        max-width: 719px;
-        padding-left: 0;
-        padding-right: 0;
+        padding: 0;
         margin: 5rem auto 1.25rem auto;
+        line-height: 1.15;
         font-family: 'ArnhemProBlond', serif;
         font-size: 1.875rem;
         @media only screen and (min-width: 1025) {
             font-size: 2.8125rem;
         }
+    }
+    &.article-longread-subheader {
+        max-width: 719px;
+        padding-left: 0;
+        padding-right: 0;
+        margin: 5rem auto 1.25rem auto;
         line-height: 1.15;
+        font-family: 'ArnhemProBlond', serif;
+        font-size: 1.875rem;
+        @media only screen and (min-width: 1025) {
+            font-size: 2.8125rem;
+        }
     }
 
     &.article-inline {
