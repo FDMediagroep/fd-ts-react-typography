@@ -16,6 +16,22 @@ exports[`Typography renders h1 correctly 2`] = `
 </h1>
 `;
 
+exports[`Typography renders h2 correctly 1`] = `
+<h2
+  className="fd-h2"
+>
+  Default
+</h2>
+`;
+
+exports[`Typography renders h2 correctly 2`] = `
+<h2
+  className="fd-h2 article-inline"
+>
+  article-inline
+</h2>
+`;
+
 exports[`Typography renders h3 correctly 1`] = `
 <h3
   className="fd-h3"
@@ -30,4 +46,20 @@ exports[`Typography renders h3 correctly 2`] = `
 >
   card
 </h3>
+`;
+
+exports[`Typography renders p correctly 1`] = `
+<p
+  className="fd-paragraph"
+>
+  Default
+</p>
+`;
+
+exports[`Typography renders p correctly 2`] = `
+<p
+  className="fd-paragraph article"
+>
+  article
+</p>
 `;

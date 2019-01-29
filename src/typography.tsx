@@ -2,6 +2,7 @@ import H1, {H1Style} from './H1';
 import H2, {H2Style} from './H2';
 import H3, {H3Style} from './H3';
 import P, {PStyle} from './P';
+import FigCaption, {FigCaptionStyle} from './FigCaption';
 import { createGlobalStyle } from 'styled-components';
 
 export {H1, H1Style};
@@ -13,4 +14,5 @@ ${(H1Style as any).globalStyle.rules}
 ${(H2Style as any).globalStyle.rules}
 ${(H3Style as any).globalStyle.rules}
 ${(PStyle as any).globalStyle.rules}
+${(FigCaptionStyle as any).globalStyle.rules}
 `;

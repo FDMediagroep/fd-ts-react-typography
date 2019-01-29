@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {H1, H3, P, H2} from "../src/typography";
 import { createGlobalStyle } from 'styled-components';
+import FigCaption from '../src/FigCaption';
 
 const GlobalStyles = createGlobalStyle`
     body {
@@ -75,5 +76,12 @@ ReactDOM.render(<>
             <P className="article-longread-link-block">.fd-paragraph.article-longread-link-block</P>
             <P className="article-bullet-points">.fd-paragraph.article-bullet-points</P>
         </fieldset>
+
+        <fieldset>
+            <legend>figcaption</legend>
+            <FigCaption className="article-inline" caption=".fd-figcaption.article-inline" photographer="source: kitchensink"/>
+            <FigCaption className="article-longread-inline" caption=".fd-figcaption.article-longread-inline" photographer="source: kitchensink"/>
+        </fieldset>
+
     </>,
     document.getElementById('root'));
