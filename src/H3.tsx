@@ -23,6 +23,19 @@ export const H3Style = createGlobalStyle`
     font-size: 1rem;
     line-height: 1.1em;
 
+    &.article-subheader {
+        max-width: 719px;
+        padding-left: 0;
+        padding-right: 0;
+        margin: 5rem auto 1.25rem auto;
+        font-family: 'ArnhemProBlond', serif;
+        font-size: 1.875rem;
+        @media only screen and (min-width: 1025) {
+            font-size: 2.8125rem;
+        }
+        line-height: 1.15;
+    }
+
     &.card {
         font-family: 'ProximaNovaBold', sans-serif;
         line-height: 1.2em;

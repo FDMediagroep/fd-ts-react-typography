@@ -16,7 +16,17 @@ const GlobalStyle = createGlobalStyle`
     .fd-h2 {
         margin: 0;
         padding: 0;
+        &.article-subheader {
+            max-width: 719px;
+            padding-left: 0;
+            padding-right: 0;
+            margin: 2.25rem auto 0 auto;
+            font-size: 1.375rem;
+            font-family: 'ArnhemProBold', serif;
+        }
+
         &.article-longread-cyferkader {
+            font-weight: 400;
             color: #f05031;
             font-size: 3.125rem;
             font-family: 'ConsortWebRegular', serif;

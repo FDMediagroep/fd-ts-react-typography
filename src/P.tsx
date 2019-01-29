@@ -16,11 +16,12 @@ const GlobalStyle = createGlobalStyle`
     .fd-paragraph {
         margin: 0;
         padding: 0;
-        &.article-longread {
+        &.article {
             max-width: 719px;
             margin-left: auto;
             margin-right: auto;
             width: auto;
+            margin-bottom: 0.625rem;
             font-size: 1.125rem;
             @media only screen and (min-width: 641px) {
                 font-size: 1.1875rem;
@@ -29,6 +30,13 @@ const GlobalStyle = createGlobalStyle`
                 font-size: 1.3125rem;
             }
             font-family: 'ArnhemProBlond', serif;
+            strong {
+                font-family: 'ArnhemProBold', serif;
+                font-weight: 700;
+            }
+            em {
+                font-style: italic;
+            }
             &:first-of-type::first-letter {
                 font-size: 6rem;
                 line-height: .8;
@@ -63,6 +71,7 @@ const GlobalStyle = createGlobalStyle`
             font-family: 'ProximaNovaRegular', sans-serif;
             font-size: 1.0625rem;
             line-height: 1.2;
+            margin: 0 0 0.9375rem 0;
         }
 
         &.article-longread-cyferkader {
@@ -70,6 +79,7 @@ const GlobalStyle = createGlobalStyle`
             font-family: 'ProximaNovaRegular', sans-serif;
             font-size: 1.0625rem;
             line-height: 1.2;
+            margin-bottom: 2.125rem;
         }
 
     }
