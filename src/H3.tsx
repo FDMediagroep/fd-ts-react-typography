@@ -17,7 +17,6 @@ export const H3Style = createGlobalStyle`
     margin: 0;
     padding: 0;
     font-family: 'ProximaNovaBold', sans-serif;
-    color: #49a4a2;
     box-sizing: border-box;
     display: block;
     font-size: 1rem;
@@ -37,6 +36,7 @@ export const H3Style = createGlobalStyle`
     }
 
     &.card {
+        color: #49a4a2;
         font-family: 'ProximaNovaBold', sans-serif;
         line-height: 1.2em;
         @media only screen and (min-width: 641px) {
