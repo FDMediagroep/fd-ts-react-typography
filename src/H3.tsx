@@ -35,6 +35,28 @@ export const H3Style = createGlobalStyle`
         line-height: 1.15;
     }
 
+    &.article-inline {
+        font-size: 1.25rem;
+        font-family: 'ProximaNovaBold', sans-serif;
+        color: #49a4a2;
+        margin-bottom: 1rem;
+    }
+
+    &.article-longread-inline {
+        font-size: 1.25rem;
+        font-family: 'ProximaNovaBold', sans-serif;
+        color: #f05031;
+        margin-bottom: 1rem;
+    }
+
+    &.article-inline-stack-frame {
+        font-size: 1.5rem;
+        font-family: 'ProximaNovaBold', sans-serif;
+        color: #4d494C;
+        line-height: 2.025rem;
+        margin: 0;
+    }
+
     &.card {
         color: #49a4a2;
         font-family: 'ProximaNovaBold', sans-serif;

@@ -25,13 +25,21 @@ const GlobalStyle = createGlobalStyle`
             font-family: 'ArnhemProBold', serif;
         }
 
-        &.article-longread-cyferkader {
+        &.article-longread-number-frame {
             font-weight: 400;
             color: #f05031;
             font-size: 3.125rem;
             font-family: 'ConsortWebRegular', serif;
             line-height: 1em;
         }
+
+        &.article-link-block {
+            color: #191919;
+            font-size: 1.0625rem;
+            font-family: 'ProximaNovaRegular', sans-serif;
+            line-height: 1.2em;
+        }
+
     }
 `;
 

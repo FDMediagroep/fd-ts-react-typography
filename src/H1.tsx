@@ -44,6 +44,8 @@ export const H1Style = createGlobalStyle`
         font-weight: normal;
         width: auto;
         font-size: 1.625rem;
+        margin: 15px 0 30px 0;
+        text-align: center;
         @media only screen and (min-width: 641px) {
             font-size: 3.4375rem;
         }

@@ -16,7 +16,7 @@ const GlobalStyle = createGlobalStyle`
     .fd-paragraph {
         margin: 0;
         padding: 0;
-        &.article {
+        &.article-longread {
             max-width: 719px;
             margin-left: auto;
             margin-right: auto;
@@ -74,14 +74,89 @@ const GlobalStyle = createGlobalStyle`
             margin: 0 0 0.9375rem 0;
         }
 
-        &.article-longread-cyferkader {
+        &.article-longread-number-frame {
             color: #f05031;
             font-family: 'ProximaNovaRegular', sans-serif;
             font-size: 1.0625rem;
             line-height: 1.2;
-            margin-bottom: 2.125rem;
+            margin: 0 0 0.65625rem 0;
         }
 
+        &.article-text-frame {
+            display: inline-block;
+            width: 100%;
+            font-size: 1.0625rem;
+            font-family: 'ProximaNovaRegular', sans-serif;
+            line-height: 1.434375rem;
+            margin: 0 0 1.15622rem 0;
+        }
+
+        &.article-stack-frame {
+            display: inline-block;
+            font-size: 1.5rem;
+            font-family: 'ProximaNovaBold', sans-serif;
+            color: #49a4a2;
+            line-height: 2.025rem;
+            margin: 0;
+        }
+
+        &.article-longread-stack-frame {
+            display: inline-block;
+            font-size: 1.5rem;
+            font-family: 'ProximaNovaBold', sans-serif;
+            color: #f05031;
+            line-height: 2.025rem;
+            margin: 0;
+        }
+
+        &.article-link-block {
+            color: #49a4a2;
+            font-size: 1rem;
+            font-family: 'ProximaNovaBold', sans-serif;
+            line-height: 1.1em;
+            @media only screen and (min-width: 641px) {
+                font-size: 1.125rem;
+            }
+        }
+        &.article-longread-link-block {
+            color: #f05031;
+            font-size: 1rem;
+            font-family: 'ProximaNovaBold', sans-serif;
+            line-height: 1.1em;
+            @media only screen and (min-width: 641px) {
+                font-size: 1.125rem;
+            }
+        }
+
+        &.article-bullet-points {
+            &:before {
+                content: url(https://static-dev.fd.nl/assets/4.1-SNAPSHOT/img/fd/icons/bullet.svg);
+                float: left;
+                width: 20px;
+                height: 20px;
+                margin: 3px 10px 10px 0;
+            }
+            margin: 0 0 0.9375rem 0;
+            color: #191919;
+            font-size: 1.25rem;
+            font-family: 'ProximaNovaRegular', sans-serif;
+            line-height: 1.2;
+        }
+
+        &.article-longread-bullet-points {
+            &:before {
+                content: url(https://static-dev.fd.nl/assets/4.1-SNAPSHOT/img/fd/icons/bullet_longread.svg);
+                float: left;
+                width: 20px;
+                height: 20px;
+                margin: 3px 10px 10px 0;
+            }
+            margin: 0 0 0.9375rem 0;
+            color: #191919;
+            font-size: 1.25rem;
+            font-family: 'ProximaNovaRegular', sans-serif;
+            line-height: 1.2;
+        }
     }
 `;
 
