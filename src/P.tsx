@@ -34,6 +34,10 @@ const GlobalStyle = createGlobalStyle`
             em {
                 font-style: italic;
             }
+            a {
+                color: #49a4a2;
+                cursor: pointer;
+            }
         }
         &.article-longread {
             max-width: 719px;
@@ -63,6 +67,10 @@ const GlobalStyle = createGlobalStyle`
                 color: #f05031;
                 text-transform: capitalize;
                 font-family: 'ProximaNovaRegular', sans-serif;
+            }
+            a {
+                color: #f05031;
+                cursor: pointer;
             }
         }
 

@@ -63,6 +63,8 @@ ReactDOM.render(<>
             <P className="article-longread"><strong>.fd-paragraph.article-longread (strong)</strong></P>
             <P className="article"><em>.fd-paragraph.article (emphasized)</em></P>
             <P className="article-longread"><em>.fd-paragraph.article-longread (emphasized)</em></P>
+            <P className="article"><a href="">.fd-paragraph.article (link)</a></P>
+            <P className="article-longread"><a href="">.fd-paragraph.article-longread (link)</a></P>
             <P className="article-summary-p">.fd-paragraph.article-summary-p</P>
             <P className="article-stack-frame">.fd-paragraph.article-stack-frame</P>
             <P className="article-longread-stack-frame">.fd-paragraph.article-longread-stack-frame</P>
