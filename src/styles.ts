@@ -15,33 +15,41 @@ type HeadingTypes = 'page-h'
 | 'my-news-aside-h'
 | 'article-h-inline-number-frame'
 | 'article-h-longread-inline-number-frame'
+| 'article-h-persoonlijk-inline-number-frame'
 | 'article-h-subheader'
 | 'article-h-longread-subheader'
 | 'article-h-subheader2'
 | 'article-h-longread-subheader2'
 | 'article-h-inline'
 | 'article-h-longread-inline'
+| 'article-h-persoonlijk-inline'
 | 'article-h-inline-stack-frame'
 | 'article-h-inline-link-block'
 | 'card-h'
+| 'card-h-longread'
+| 'card-h-persoonlijk'
 ;
 
 type ParagraphTypes = 'article-p'
+| 'article-p-persoonlijk'
 | 'article-p-longread'
 | 'article-p-longread-persoonlijk'
 | 'article-p-intro'
 | 'article-p-longread-intro'
-| 'article-p-summary'
-| 'article-p-number-frame'
-| 'article-p-longread-number-frame'
-| 'article-p-text-frame'
-| 'article-p-longread-text-frame'
-| 'article-p-longread-persoonlijk-text-frame'
-| 'article-p-stack-frame'
-| 'article-p-longread-stack-frame'
-| 'article-p-link-block'
-| 'article-p-longread-link-block'
-| 'article-p-bullet-points'
+| 'article-p-inline-summary'
+| 'article-p-inline-number-frame'
+| 'article-p-longread-inline-number-frame'
+| 'article-p-persoonlijk-inline-number-frame'
+| 'article-p-inline-text-frame'
+| 'article-p-longread-inline-text-frame'
+| 'article-p-persoonlijk-inline-text-frame'
+| 'article-p-inline-stack-frame'
+| 'article-p-longread-inline-stack-frame'
+| 'article-p-persoonlijk-inline-stack-frame'
+| 'article-p-inline-link-block'
+| 'article-p-longread-inline-link-block'
+| 'article-p-persoonlijk-inline-link-block'
+| 'article-p-inline-bullet-points'
 ;
 
 export type AllTypes = FigCaptionTypes | HeadingTypes | ParagraphTypes;
@@ -58,6 +66,7 @@ export const figcaptionStyles: TextStyle = {
         padding: 0.375rem 0;
         font-family: 'ProximaNovaRegular', sans-serif;
         line-height: 1.2em;
+        font-weight: normal;
         font-size: 0.8125rem;
         @media only screen and (min-width: 641px) {
             font-size: 0.875rem;
@@ -74,6 +83,7 @@ export const figcaptionStyles: TextStyle = {
         padding: 0.375rem 0;
         font-family: 'ProximaNovaRegular', sans-serif;
         line-height: 1.2em;
+        font-weight: normal;
         font-size: 0.8125rem;
         @media only screen and (min-width: 641px) {
             font-size: 0.875rem;
@@ -92,6 +102,7 @@ export const headingStyles: TextStyle = {
         padding: 0;
         font-family: 'ArnhemProBold', serif;
         line-height: 1.08em;
+        font-weight: normal;
         font-size: 1.6065rem;
         @media only screen and (min-width: 641px) {
             font-size: 2.8125rem;
@@ -107,6 +118,7 @@ export const headingStyles: TextStyle = {
         font-family: 'ArnhemProBold', serif;
         line-height: 1.08em;
         width: 88%;
+        font-weight: normal;
         font-size: 1.6065rem;
         @media only screen and (min-width: 641px) {
             font-size: 2.8125rem;
@@ -119,9 +131,9 @@ export const headingStyles: TextStyle = {
     .fd-typography.article-h-longread {
         font-family: 'ConsortWebThin', serif;
         font-weight: normal;
-        font-size: 1.625rem;
         margin: 15px 0 30px 0;
         text-align: center;
+        font-size: 1.625rem;
         @media only screen and (min-width: 641px) {
             font-size: 3.4375rem;
         }
@@ -131,10 +143,12 @@ export const headingStyles: TextStyle = {
     }`,
     'article-h-longread-persoonlijk': createGlobalStyle`
     .fd-typography.article-h-longread-persoonlijk {
-        margin: 0;
+        margin: 15px 0 30px 0;
         padding: 0;
         font-family: 'ArnhemProBold', serif;
         line-height: 1.08em;
+        font-weight: normal;
+        text-align: center;
         font-size: 1.625rem;
         @media only screen and (min-width: 641px) {
             font-size: 3.4375rem;
@@ -149,6 +163,7 @@ export const headingStyles: TextStyle = {
         padding: 0;
         font-family: 'ArnhemProBold', serif;
         line-height: 1.08em;
+        font-weight: normal;
         font-size: 1.5625rem;
         @media only screen and (min-width: 641px) {
             font-size: 1.8125rem;
@@ -160,6 +175,7 @@ export const headingStyles: TextStyle = {
         padding: 0;
         font-family: 'ArnhemProBold', serif;
         line-height: 1.08em;
+        font-weight: normal;
         font-size: 1.375rem;
     }`,
     'cover-teaser-h': createGlobalStyle`
@@ -168,6 +184,7 @@ export const headingStyles: TextStyle = {
         padding: 0;
         font-family: 'ArnhemProBold', serif;
         line-height: 1.08em;
+        font-weight: normal;
         font-size: 1.375rem;
         color: white;
     }`,
@@ -177,6 +194,7 @@ export const headingStyles: TextStyle = {
         padding: 0;
         font-family: 'ArnhemProBold', serif;
         line-height: 1.08em;
+        font-weight: normal;
         font-size: 1.125rem;
         @media only screen and (min-width: 641px) {
             font-size: 1.1875rem;
@@ -193,6 +211,7 @@ export const headingStyles: TextStyle = {
         line-height: 1.08em;
         font-family: 'ProximaNovaBold', Helvetica, Arial, sans-serif;
         color: #49a4a2;
+        font-weight: normal;
         font-size: 1.875rem;
     }`,
     'service-accordion-h': createGlobalStyle`
@@ -202,6 +221,7 @@ export const headingStyles: TextStyle = {
         font-family: 'ArnhemProBold', serif;
         line-height: 1.08em;
         font-family: 'ProximaNovaRegular', Helvetica, Arial, sans-serif;
+        font-weight: normal;
         font-size: 1rem;
         @media only screen and (min-width: 641px) {
             font-size: 1.0625rem;
@@ -220,6 +240,7 @@ export const headingStyles: TextStyle = {
         font-family: 'ProximaNovaBold', sans-serif;
         line-height: 1.2em;
         color: #49a4a2;
+        font-weight: normal;
         font-size: 1rem;
         @media only screen and (min-width: 641px) {
             font-size: 1.125rem;
@@ -233,6 +254,7 @@ export const headingStyles: TextStyle = {
         padding: 0;
         margin: 2.25rem 0 0 0;
         font-family: 'ArnhemProBold', serif;
+        font-weight: normal;
         font-size: 1.375rem;
     }`,
     'article-h-longread-subheader': createGlobalStyle`
@@ -241,6 +263,7 @@ export const headingStyles: TextStyle = {
         padding: 0;
         max-width: 719px;
         margin: 2.25rem auto 0 auto;
+        font-weight: normal;
         font-size: 1.375rem;
         font-family: 'ArnhemProBold', serif;
     }`,
@@ -248,7 +271,7 @@ export const headingStyles: TextStyle = {
     .fd-typography.article-h-inline-number-frame {
         margin: 0;
         padding: 0;
-        font-weight: 400;
+        font-weight: normal;
         color: #49a4a2;
         font-size: 3.125rem;
         font-family: 'ConsortWebRegular', serif;
@@ -258,8 +281,18 @@ export const headingStyles: TextStyle = {
     .fd-typography.article-h-longread-inline-number-frame {
         margin: 0;
         padding: 0;
-        font-weight: 400;
+        font-weight: normal;
         color: #f05031;
+        font-size: 3.125rem;
+        font-family: 'ConsortWebRegular', serif;
+        line-height: 1em;
+    }`,
+    'article-h-persoonlijk-inline-number-frame': createGlobalStyle`
+    .fd-typography.article-h-persoonlijk-inline-number-frame {
+        margin: 0;
+        padding: 0;
+        font-weight: normal;
+        color: #e57e30;
         font-size: 3.125rem;
         font-family: 'ConsortWebRegular', serif;
         line-height: 1em;
@@ -269,6 +302,7 @@ export const headingStyles: TextStyle = {
         margin: 0;
         padding: 0;
         color: #191919;
+        font-weight: normal;
         font-size: 1.0625rem;
         font-family: 'ProximaNovaRegular', sans-serif;
         line-height: 1.2em;
@@ -277,12 +311,9 @@ export const headingStyles: TextStyle = {
     .fd-typography.article-h-subheader2 {
         margin: 0;
         padding: 0;
-        font-family: 'ProximaNovaBold', sans-serif;
         box-sizing: border-box;
         display: block;
-        font-size: 1rem;
-        line-height: 1.1em;
-        padding: 0;
+        font-weight: normal;
         margin: 5rem auto 1.25rem auto;
         line-height: 1.15;
         font-family: 'ArnhemProBlond', serif;
@@ -295,17 +326,13 @@ export const headingStyles: TextStyle = {
     .fd-typography.article-h-longread-subheader2 {
         margin: 0;
         padding: 0;
-        font-family: 'ProximaNovaBold', sans-serif;
         box-sizing: border-box;
         display: block;
-        font-size: 1rem;
-        line-height: 1.1em;
         max-width: 719px;
-        padding-left: 0;
-        padding-right: 0;
         margin: 5rem auto 1.25rem auto;
         line-height: 1.15;
         font-family: 'ArnhemProBlond', serif;
+        font-weight: normal;
         font-size: 1.875rem;
         @media only screen and (min-width: 1025) {
             font-size: 2.8125rem;
@@ -315,11 +342,10 @@ export const headingStyles: TextStyle = {
     .fd-typography.article-h-inline {
         margin: 0;
         padding: 0;
-        font-family: 'ProximaNovaBold', sans-serif;
         box-sizing: border-box;
         display: block;
-        font-size: 1rem;
         line-height: 1.1em;
+        font-weight: normal;
         font-size: 1.25rem;
         font-family: 'ProximaNovaBold', sans-serif;
         color: #49a4a2;
@@ -329,25 +355,36 @@ export const headingStyles: TextStyle = {
     .fd-typography.article-h-longread-inline {
         margin: 0;
         padding: 0;
-        font-family: 'ProximaNovaBold', sans-serif;
         box-sizing: border-box;
         display: block;
-        font-size: 1rem;
         line-height: 1.1em;
+        font-weight: normal;
         font-size: 1.25rem;
         font-family: 'ProximaNovaBold', sans-serif;
         color: #f05031;
+        margin-bottom: 1rem;
+    }`,
+    'article-h-persoonlijk-inline': createGlobalStyle`
+    .fd-typography.article-h-persoonlijk-inline {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        display: block;
+        line-height: 1.1em;
+        font-weight: normal;
+        font-size: 1.25rem;
+        font-family: 'ProximaNovaBold', sans-serif;
+        color: #e57e30;
         margin-bottom: 1rem;
     }`,
     'article-h-inline-stack-frame': createGlobalStyle`
     .fd-typography.article-h-inline-stack-frame {
         margin: 0;
         padding: 0;
-        font-family: 'ProximaNovaBold', sans-serif;
         box-sizing: border-box;
         display: block;
-        font-size: 1rem;
         line-height: 1.1em;
+        font-weight: normal;
         font-size: 1.5rem;
         font-family: 'ProximaNovaBold', sans-serif;
         color: #4d494C;
@@ -358,14 +395,43 @@ export const headingStyles: TextStyle = {
     .fd-typography.card-h {
         margin: 0;
         padding: 0;
-        font-family: 'ProximaNovaBold', sans-serif;
         box-sizing: border-box;
         display: block;
-        font-size: 1rem;
-        line-height: 1.1em;
         color: #49a4a2;
         font-family: 'ProximaNovaBold', sans-serif;
         line-height: 1.2em;
+        font-weight: normal;
+        font-size: 1rem;
+        @media only screen and (min-width: 641px) {
+            font-size: 1.25rem;
+        }
+    }`,
+    'card-h-longread': createGlobalStyle`
+    .fd-typography.card-h-longread {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        display: block;
+        color: #f05031;
+        font-family: 'ProximaNovaBold', sans-serif;
+        line-height: 1.2em;
+        font-weight: normal;
+        font-size: 1rem;
+        @media only screen and (min-width: 641px) {
+            font-size: 1.25rem;
+        }
+    }`,
+    'card-h-persoonlijk': createGlobalStyle`
+    .fd-typography.card-h-persoonlijk {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        display: block;
+        color: #e57e30;
+        font-family: 'ProximaNovaBold', sans-serif;
+        line-height: 1.2em;
+        font-weight: normal;
+        font-size: 1rem;
         @media only screen and (min-width: 641px) {
             font-size: 1.25rem;
         }
@@ -380,6 +446,7 @@ export const paragraphStyles: TextStyle = {
         font-family: 'ArnhemProBlond', serif;
         line-height: 1.5em;
         margin: 0 0 .5em 0;
+        font-weight: normal;
         font-size: 1.125rem;
         @media only screen and (min-width: 641px) {
             font-size: 1.1875rem;
@@ -398,8 +465,34 @@ export const paragraphStyles: TextStyle = {
             cursor: pointer;
             text-decoration: none;
         }
-    }
-    `,
+    }`,
+    'article-p-persoonlijk':  createGlobalStyle`
+    .fd-typography.article-p-persoonlijk {
+        margin: 0;
+        padding: 0;
+        font-family: 'ArnhemProBlond', serif;
+        line-height: 1.5em;
+        margin: 0 0 .5em 0;
+        font-weight: normal;
+        font-size: 1.125rem;
+        @media only screen and (min-width: 641px) {
+            font-size: 1.1875rem;
+        }
+        @media only screen and (min-width: 1025px) {
+            font-size: 1.3125rem;
+        }
+        strong {
+            font-family: 'ArnhemProBold', serif;
+        }
+        em {
+            font-style: italic;
+        }
+        a {
+            color: #e57e30;
+            cursor: pointer;
+            text-decoration: none;
+        }
+    }`,
     'article-p-longread':  createGlobalStyle`
     .fd-typography.article-p-longread {
         margin: 0;
@@ -409,6 +502,7 @@ export const paragraphStyles: TextStyle = {
         margin-right: auto;
         width: auto;
         margin-bottom: 0.625rem;
+        font-weight: normal;
         font-size: 1.125rem;
         @media only screen and (min-width: 641px) {
             font-size: 1.1875rem;
@@ -447,6 +541,7 @@ export const paragraphStyles: TextStyle = {
         margin-right: auto;
         width: auto;
         margin-bottom: 0.625rem;
+        font-weight: normal;
         font-size: 1.125rem;
         @media only screen and (min-width: 641px) {
             font-size: 1.1875rem;
@@ -483,6 +578,7 @@ export const paragraphStyles: TextStyle = {
         color: #191919;
         width: 100%;
         margin: 0;
+        font-weight: normal;
         font-size: 1.375rem;
         @media only screen and (min-width: 641px) {
             font-size: 1.5625rem;
@@ -502,6 +598,7 @@ export const paragraphStyles: TextStyle = {
         max-width: 719px;
         margin: 0 auto;
         width: auto;
+        font-weight: normal;
         font-size: 1.125rem;
         @media only screen and (min-width: 641px) {
             font-size: 1.5625rem;
@@ -513,43 +610,58 @@ export const paragraphStyles: TextStyle = {
         text-align: center;
         font-family: 'ConsortWebBold', serif;
     }`,
-    'article-p-summary': createGlobalStyle`
-    .fd-typography.article-p-summary {
+    'article-p-inline-summary': createGlobalStyle`
+    .fd-typography.article-p-inline-summary {
         margin: 0;
         padding: 0;
         display: inline-block;
         width: 100%;
         font-family: 'ProximaNovaRegular', sans-serif;
+        font-weight: normal;
         font-size: 1.0625rem;
         line-height: 1.2;
         margin: 0 0 0.9375rem 0;
     }`,
-    'article-p-number-frame': createGlobalStyle`
-    .fd-typography.article-p-number-frame {
+    'article-p-inline-number-frame': createGlobalStyle`
+    .fd-typography.article-p-inline-number-frame {
         margin: 0;
         padding: 0;
         color: #49a4a2;
         font-family: 'ProximaNovaRegular', sans-serif;
+        font-weight: normal;
         font-size: 1.0625rem;
         line-height: 1.2;
         margin: 0 0 0.65625rem 0;
     }`,
-    'article-p-longread-number-frame': createGlobalStyle`
-    .fd-typography.article-p-longread-number-frame {
+    'article-p-longread-inline-number-frame': createGlobalStyle`
+    .fd-typography.article-p-longread-inline-number-frame {
         margin: 0;
         padding: 0;
         color: #f05031;
         font-family: 'ProximaNovaRegular', sans-serif;
+        font-weight: normal;
         font-size: 1.0625rem;
         line-height: 1.2;
         margin: 0 0 0.65625rem 0;
     }`,
-    'article-p-text-frame': createGlobalStyle`
-    .fd-typography.article-p-text-frame {
+    'article-p-persoonlijk-inline-number-frame': createGlobalStyle`
+    .fd-typography.article-p-persoonlijk-inline-number-frame {
+        margin: 0;
+        padding: 0;
+        color: #e57e30;
+        font-family: 'ProximaNovaRegular', sans-serif;
+        font-weight: normal;
+        font-size: 1.0625rem;
+        line-height: 1.2;
+        margin: 0 0 0.65625rem 0;
+    }`,
+    'article-p-inline-text-frame': createGlobalStyle`
+    .fd-typography.article-p-inline-text-frame {
         margin: 0;
         padding: 0;
         display: inline-block;
         width: 100%;
+        font-weight: normal;
         font-size: 1.0625rem;
         font-family: 'ProximaNovaRegular', sans-serif;
         line-height: 1.434375rem;
@@ -563,12 +675,13 @@ export const paragraphStyles: TextStyle = {
             margin: 3px 5px 0 0;
         }
     }`,
-    'article-p-longread-text-frame': createGlobalStyle`
-    .fd-typography.article-p-longread-text-frame {
+    'article-p-longread-inline-text-frame': createGlobalStyle`
+    .fd-typography.article-p-longread-inline-text-frame {
         margin: 0;
         padding: 0;
         display: inline-block;
         width: 100%;
+        font-weight: normal;
         font-size: 1.0625rem;
         font-family: 'ProximaNovaRegular', sans-serif;
         line-height: 1.434375rem;
@@ -582,12 +695,13 @@ export const paragraphStyles: TextStyle = {
             margin: 3px 5px 0 0;
         }
     }`,
-    'article-p-longread-persoonlijk-text-frame': createGlobalStyle`
-    .fd-typography.article-p-longread-persoonlijk-text-frame {
+    'article-p-persoonlijk-inline-text-frame': createGlobalStyle`
+    .fd-typography.article-p-persoonlijk-inline-text-frame {
         margin: 0;
         padding: 0;
         display: inline-block;
         width: 100%;
+        font-weight: normal;
         font-size: 1.0625rem;
         font-family: 'ProximaNovaRegular', sans-serif;
         line-height: 1.434375rem;
@@ -601,33 +715,48 @@ export const paragraphStyles: TextStyle = {
             margin: 3px 5px 0 0;
         }
     }`,
-    'article-p-stack-frame': createGlobalStyle`
-    .fd-typography.article-p-stack-frame {
+    'article-p-inline-stack-frame': createGlobalStyle`
+    .fd-typography.article-p-inline-stack-frame {
         margin: 0;
         padding: 0;
         display: inline-block;
+        font-weight: normal;
         font-size: 1.5rem;
         font-family: 'ProximaNovaBold', sans-serif;
         color: #49a4a2;
         line-height: 2.025rem;
         margin: 0;
     }`,
-    'article-p-longread-stack-frame': createGlobalStyle`
-    .fd-typography.article-p-longread-stack-frame {
+    'article-p-longread-inline-stack-frame': createGlobalStyle`
+    .fd-typography.article-p-longread-inline-stack-frame {
         margin: 0;
         padding: 0;
         display: inline-block;
+        font-weight: normal;
         font-size: 1.5rem;
         font-family: 'ProximaNovaBold', sans-serif;
         color: #f05031;
         line-height: 2.025rem;
         margin: 0;
     }`,
-    'article-p-link-block': createGlobalStyle`
-    .fd-typography.article-p-link-block {
+    'article-p-persoonlijk-inline-stack-frame': createGlobalStyle`
+    .fd-typography.article-p-persoonlijk-inline-stack-frame {
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+        font-weight: normal;
+        font-size: 1.5rem;
+        font-family: 'ProximaNovaBold', sans-serif;
+        color: #e57e30;
+        line-height: 2.025rem;
+        margin: 0;
+    }`,
+    'article-p-inline-link-block': createGlobalStyle`
+    .fd-typography.article-p-inline-link-block {
         margin: 0;
         padding: 0;
         color: #49a4a2;
+        font-weight: normal;
         font-size: 1rem;
         font-family: 'ProximaNovaBold', sans-serif;
         line-height: 1.1em;
@@ -635,11 +764,12 @@ export const paragraphStyles: TextStyle = {
             font-size: 1.125rem;
         }
     }`,
-    'article-p-longread-link-block': createGlobalStyle`
-    .fd-typography.article-p-longread-link-block {
+    'article-p-longread-inline-link-block': createGlobalStyle`
+    .fd-typography.article-p-longread-inline-link-block {
         margin: 0;
         padding: 0;
         color: #f05031;
+        font-weight: normal;
         font-size: 1rem;
         font-family: 'ProximaNovaBold', sans-serif;
         line-height: 1.1em;
@@ -647,12 +777,26 @@ export const paragraphStyles: TextStyle = {
             font-size: 1.125rem;
         }
     }`,
-    'article-p-bullet-points': createGlobalStyle`
-    .fd-typography.article-p-bullet-points {
+    'article-p-persoonlijk-inline-link-block': createGlobalStyle`
+    .fd-typography.article-p-persoonlijk-inline-link-block {
+        margin: 0;
+        padding: 0;
+        color: #e57e30;
+        font-weight: normal;
+        font-size: 1rem;
+        font-family: 'ProximaNovaBold', sans-serif;
+        line-height: 1.1em;
+        @media only screen and (min-width: 641px) {
+            font-size: 1.125rem;
+        }
+    }`,
+    'article-p-inline-bullet-points': createGlobalStyle`
+    .fd-typography.article-p-inline-bullet-points {
         margin: 0;
         padding: 0;
         margin: 0 0 0.9375rem 0;
         color: #191919;
+        font-weight: normal;
         font-size: 1.25rem;
         font-family: 'ProximaNovaRegular', sans-serif;
         line-height: 1.2;
