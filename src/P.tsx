@@ -75,6 +75,41 @@ const GlobalStyle = createGlobalStyle`
             text-decoration: none;
         }
     }
+    &.article-longread-persoonlijk {
+        max-width: 719px;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        margin-bottom: 0.625rem;
+        font-size: 1.125rem;
+        @media only screen and (min-width: 641px) {
+            font-size: 1.1875rem;
+        }
+        @media only screen and (min-width: 1025px) {
+            font-size: 1.3125rem;
+        }
+        font-family: 'ArnhemProBlond', serif;
+        strong {
+            font-family: 'ArnhemProBold', serif;
+        }
+        em {
+            font-style: italic;
+        }
+        &:first-of-type::first-letter {
+            font-size: 6rem;
+            line-height: .8;
+            margin: 0 1rem 0 -1rem;
+            float: left;
+            color: #e57e30;
+            text-transform: capitalize;
+            font-family: 'ProximaNovaRegular', sans-serif;
+        }
+        a {
+            color: #e57e30;
+            cursor: pointer;
+            text-decoration: none;
+        }
+    }
 
     &.article-intro {
         color: #191919;
@@ -139,6 +174,46 @@ const GlobalStyle = createGlobalStyle`
         font-family: 'ProximaNovaRegular', sans-serif;
         line-height: 1.434375rem;
         margin: 0 0 1.15622rem 0;
+        &:first-of-type::first-letter {
+            text-transform: capitalize;
+            font-size: 4.75em;
+            line-height: 0.75em;
+            color: #49a4a2;
+            float: left;
+            margin: 3px 5px 0 0;
+        }
+    }
+    &.article-longread-text-frame {
+        display: inline-block;
+        width: 100%;
+        font-size: 1.0625rem;
+        font-family: 'ProximaNovaRegular', sans-serif;
+        line-height: 1.434375rem;
+        margin: 0 0 1.15622rem 0;
+        &:first-of-type::first-letter {
+            text-transform: capitalize;
+            font-size: 4.75em;
+            line-height: 0.75em;
+            color: #f05031;
+            float: left;
+            margin: 3px 5px 0 0;
+        }
+    }
+    &.article-longread-persoonlijk-text-frame {
+        display: inline-block;
+        width: 100%;
+        font-size: 1.0625rem;
+        font-family: 'ProximaNovaRegular', sans-serif;
+        line-height: 1.434375rem;
+        margin: 0 0 1.15622rem 0;
+        &:first-of-type::first-letter {
+            text-transform: capitalize;
+            font-size: 4.75em;
+            line-height: 0.75em;
+            color: #e57e30;
+            float: left;
+            margin: 3px 5px 0 0;
+        }
     }
 
     &.article-stack-frame {

@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {H1, H3, P, H2, FigCaption} from "../src/typography";
+import TypoGraphy, {H1, H3, P, H2, FigCaption} from "../src/typography";
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
@@ -55,24 +55,47 @@ ReactDOM.render(<>
 
         <fieldset>
             <legend>p</legend>
+            <TypoGraphy textStyle="article-p-intro"><p>.fd-typography.article-p-intro</p></TypoGraphy>
             <P className="article-intro">.fd-paragraph.article-intro</P>
+            <TypoGraphy textStyle="article-p-longread-intro"><p>.fd-typography.article-p-longread-intro</p></TypoGraphy>
             <P className="article-longread-intro">.fd-paragraph.article-longread-intro</P>
-            <P className="article">.fd-paragraph.article-longread</P>
+            <TypoGraphy textStyle="article-p"><p>.fd-typography.article-p</p></TypoGraphy>
+            <P className="article">.fd-paragraph.article</P>
+            <TypoGraphy textStyle="article-p-longread"><p>.fd-typography.article-p-longread</p></TypoGraphy>
             <P className="article-longread">.fd-paragraph.article-longread</P>
+            <TypoGraphy textStyle="article-p"><p><strong>.fd-typography.article-p (strong)</strong></p></TypoGraphy>
             <P className="article"><strong>.fd-paragraph.article (strong)</strong></P>
+            <TypoGraphy textStyle="article-p-longread"><p><strong>.fd-typography.article-p-longread (strong)</strong></p></TypoGraphy>
             <P className="article-longread"><strong>.fd-paragraph.article-longread (strong)</strong></P>
+            <TypoGraphy textStyle="article-p"><p><em>.fd-typography.article-p (emphasized)</em></p></TypoGraphy>
             <P className="article"><em>.fd-paragraph.article (emphasized)</em></P>
+            <TypoGraphy textStyle="article-p-longread"><p><em>.fd-typography.article-p-longread (emphasized)</em></p></TypoGraphy>
             <P className="article-longread"><em>.fd-paragraph.article-longread (emphasized)</em></P>
+            <TypoGraphy textStyle="article-p"><p><a href="">.fd-typography.article-p (link)</a></p></TypoGraphy>
             <P className="article"><a href="">.fd-paragraph.article (link)</a></P>
+            <TypoGraphy textStyle="article-p-longread"><p><a href="">.fd-typography.article-p-longread (link)</a></p></TypoGraphy>
             <P className="article-longread"><a href="">.fd-paragraph.article-longread (link)</a></P>
+            <TypoGraphy textStyle="article-p-summary"><p>.fd-typography.article-p-summary</p></TypoGraphy>
             <P className="article-summary-p">.fd-paragraph.article-summary-p</P>
+            <TypoGraphy textStyle="article-p-stack-frame"><p>.fd-typography.article-p-stack-frame</p></TypoGraphy>
             <P className="article-stack-frame">.fd-paragraph.article-stack-frame</P>
+            <TypoGraphy textStyle="article-p-longread-stack-frame"><p>.fd-typography.article-p-longread-stack-frame</p></TypoGraphy>
             <P className="article-longread-stack-frame">.fd-paragraph.article-longread-stack-frame</P>
+            <TypoGraphy textStyle="article-p-number-frame"><p>.fd-typography.article-p-number-frame</p></TypoGraphy>
             <P className="article-number-frame">.fd-paragraph.article-number-frame</P>
+            <TypoGraphy textStyle="article-p-longread-number-frame"><p>.fd-typography.article-p-longread-number-frame</p></TypoGraphy>
             <P className="article-longread-number-frame">.fd-paragraph.article-longread-number-frame</P>
+            <TypoGraphy textStyle="article-p-text-frame"><p>.fd-typography.article-p-text-frame</p></TypoGraphy>
             <P className="article-text-frame">.fd-paragraph.article-text-frame</P>
+            <TypoGraphy textStyle="article-p-longread-text-frame"><p>.fd-typography.article-p-longread-text-frame</p></TypoGraphy>
+            <P className="article-longread-text-frame">.fd-paragraph.article-longread-text-frame</P>
+            <TypoGraphy textStyle="article-p-longread-persoonlijk-text-frame"><p>.fd-typography.article-p-longread-persoonlijk-text-frame</p></TypoGraphy>
+            <P className="article-longread-persoonlijk-text-frame">.fd-paragraph.article-longread-persoonlijk-text-frame</P>
+            <TypoGraphy textStyle="article-p-link-block"><p>.fd-typography.article-p-link-block</p></TypoGraphy>
             <P className="article-link-block">.fd-paragraph.article-link-block</P>
+            <TypoGraphy textStyle="article-p-longread-link-block"><p>.fd-typography.article-p-longread-link-block</p></TypoGraphy>
             <P className="article-longread-link-block">.fd-paragraph.article-longread-link-block</P>
+            <TypoGraphy textStyle="article-p-bullet-points"><p>.fd-typography.article-p-bullet-points</p></TypoGraphy>
             <P className="article-bullet-points">.fd-paragraph.article-bullet-points</P>
         </fieldset>
 
