@@ -345,6 +345,20 @@ export default class TypoGraphy extends PureComponent<Props, any> {
     }
 }
 
-export function getStyle(textStyle: Style) {
+export function getTextStyle(textStyle: Style) {
     return textStyles[textStyle];
+}
+
+export function getAllTextStyles(filter?: Style[]) {
+    const tmp: any = textStyles;
+    let result: any;
+    for (const key in tmp) {
+        if (filter && filter.indexOf(key as any) === -1) { continue; }
+        if (result) {
+            result = createGlobalStyle`${result.globalStyle.rules}${tmp[key].globalStyle.rules}`;
+        } else {
+            result = createGlobalStyle`${tmp[key].globalStyle.rules}`;
+        }
+    }
+    return result;
 }

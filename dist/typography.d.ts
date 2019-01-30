@@ -22,4 +22,5 @@ export declare const textStyles: TextStyle;
 export default class TypoGraphy extends PureComponent<Props, any> {
     render(): JSX.Element;
 }
-export declare function getStyle(textStyle: Style): any;
+export declare function getTextStyle(textStyle: Style): any;
+export declare function getAllTextStyles(filter?: Style[]): any;
