@@ -87,7 +87,7 @@ export const figcaptionStyles: TextStyle = {
 
 export const headingStyles: TextStyle = {
     'page-h': createGlobalStyle`
-    &.page-h {
+    .fd-typography.page-h {
         margin: 0;
         padding: 0;
         font-family: 'ArnhemProBold', serif;
@@ -101,7 +101,7 @@ export const headingStyles: TextStyle = {
         }
     }`,
     'article-h': createGlobalStyle`
-    &.article-h {
+    .fd-typography.article-h {
         margin: 0;
         padding: 0;
         font-family: 'ArnhemProBold', serif;
@@ -116,7 +116,7 @@ export const headingStyles: TextStyle = {
         }
     }`,
     'article-h-longread': createGlobalStyle`
-    &.article-h-longread {
+    .fd-typography.article-h-longread {
         font-family: 'ConsortWebThin', serif;
         font-weight: normal;
         font-size: 1.625rem;
@@ -130,7 +130,7 @@ export const headingStyles: TextStyle = {
         }
     }`,
     'article-h-longread-persoonlijk': createGlobalStyle`
-    &.article-h-longread-persoonlijk {
+    .fd-typography.article-h-longread-persoonlijk {
         margin: 0;
         padding: 0;
         font-family: 'ArnhemProBold', serif;
@@ -144,7 +144,7 @@ export const headingStyles: TextStyle = {
         }
     }`,
     'opening-teaser-h': createGlobalStyle`
-    &.opening-teaser-h {
+    .fd-typography.opening-teaser-h {
         margin: 0;
         padding: 0;
         font-family: 'ArnhemProBold', serif;
@@ -155,7 +155,7 @@ export const headingStyles: TextStyle = {
         }
     }`,
     'teaser-h': createGlobalStyle`
-    &.teaser-h {
+    .fd-typography.teaser-h {
         margin: 0;
         padding: 0;
         font-family: 'ArnhemProBold', serif;
@@ -163,7 +163,7 @@ export const headingStyles: TextStyle = {
         font-size: 1.375rem;
     }`,
     'cover-teaser-h': createGlobalStyle`
-    &.cover-teaser-h {
+    .fd-typography.cover-teaser-h {
         margin: 0;
         padding: 0;
         font-family: 'ArnhemProBold', serif;
@@ -172,7 +172,7 @@ export const headingStyles: TextStyle = {
         color: white;
     }`,
     'square-teaser-h': createGlobalStyle`
-    &.square-teaser-h {
+    .fd-typography.square-teaser-h {
         margin: 0;
         padding: 0;
         font-family: 'ArnhemProBold', serif;
@@ -186,7 +186,7 @@ export const headingStyles: TextStyle = {
         }
     }`,
     'service-h': createGlobalStyle`
-    &.service-h {
+    .fd-typography.service-h {
         margin: 0;
         padding: 0;
         font-family: 'ArnhemProBold', serif;
@@ -196,7 +196,7 @@ export const headingStyles: TextStyle = {
         font-size: 1.875rem;
     }`,
     'service-accordion-h': createGlobalStyle`
-    &.service-accordion-h {
+    .fd-typography.service-accordion-h {
         margin: 0;
         padding: 0;
         font-family: 'ArnhemProBold', serif;
@@ -214,7 +214,7 @@ export const headingStyles: TextStyle = {
         }
     }`,
     'my-news-aside-h': createGlobalStyle`
-    &.my-news-aside-h {
+    .fd-typography.my-news-aside-h {
         margin: 0;
         padding: 0;
         font-family: 'ProximaNovaBold', sans-serif;

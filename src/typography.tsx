@@ -10,7 +10,7 @@ export interface Props {
 export default class TypoGraphy extends PureComponent<Props, any> {
     render() {
         const updatedChildren = React.Children.map(this.props.children, (child: any) => {
-            return React.cloneElement(child, {...this.props, className: `fd-typography ${this.props.textStyle}${this.props.className ? ` ${this.props.className}` : ''}`, textStyle: undefined}, child.props.children);
+            return React.cloneElement(child, {...this.props, className: `fd-typography ${this.props.textStyle}${this.props.className ? ` ${this.props.className}` : ''}`, textStyle: null}, child.props.children);
         });
         return (
             <>
