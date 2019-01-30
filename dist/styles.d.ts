@@ -1,5 +1,5 @@
 declare type FigCaptionTypes = 'article-figcaption-inline' | 'article-figcaption-longread-inline';
-declare type HeadingTypes = 'page-h' | 'article-h' | 'article-h-longread' | 'article-h-longread-persoonlijk' | 'opening-teaser-h' | 'teaser-h' | 'cover-teaser-h' | 'square-teaser-h' | 'service-h' | 'service-accordion-h' | 'my-news-aside-h' | 'article-h-inline-number-frame' | 'article-h-longread-inline-number-frame' | 'article-h-subheader' | 'article-h-subheader2' | 'article-h-longread-subheader2' | 'article-h-inline' | 'article-h-longread-inline' | 'article-h-inline-stack-frame' | 'article-h-inline-link-block' | 'card-h';
+declare type HeadingTypes = 'page-h' | 'article-h' | 'article-h-longread' | 'article-h-longread-persoonlijk' | 'opening-teaser-h' | 'teaser-h' | 'cover-teaser-h' | 'square-teaser-h' | 'service-h' | 'service-accordion-h' | 'my-news-aside-h' | 'article-h-inline-number-frame' | 'article-h-longread-inline-number-frame' | 'article-h-subheader' | 'article-h-longread-subheader' | 'article-h-subheader2' | 'article-h-longread-subheader2' | 'article-h-inline' | 'article-h-longread-inline' | 'article-h-inline-stack-frame' | 'article-h-inline-link-block' | 'card-h';
 declare type ParagraphTypes = 'article-p' | 'article-p-longread' | 'article-p-longread-persoonlijk' | 'article-p-intro' | 'article-p-longread-intro' | 'article-p-summary' | 'article-p-number-frame' | 'article-p-longread-number-frame' | 'article-p-text-frame' | 'article-p-longread-text-frame' | 'article-p-longread-persoonlijk-text-frame' | 'article-p-stack-frame' | 'article-p-longread-stack-frame' | 'article-p-link-block' | 'article-p-longread-link-block' | 'article-p-bullet-points';
 export declare type AllTypes = FigCaptionTypes | HeadingTypes | ParagraphTypes;
 declare type TextStyle = {
@@ -25,6 +25,7 @@ export declare const textStyles: {
     "article-h-inline-number-frame"?: any;
     "article-h-longread-inline-number-frame"?: any;
     "article-h-subheader"?: any;
+    "article-h-longread-subheader"?: any;
     "article-h-subheader2"?: any;
     "article-h-longread-subheader2"?: any;
     "article-h-inline"?: any;

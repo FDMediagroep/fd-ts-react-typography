@@ -34,11 +34,12 @@ ReactDOM.render(<>
 
             <TypoGraphy textStyle="article-h-inline-number-frame"><h2>.fd-typography.article-h-inline-number-frame</h2></TypoGraphy>
             <TypoGraphy textStyle="article-h-longread-inline-number-frame"><h2>.fd-typography.article-h-longread-inline-number-frame</h2></TypoGraphy>
-            <TypoGraphy textStyle="article-h-subheader"><h2>.fd-typography.article-h-subheader</h2></TypoGraphy>
+            <TypoGraphy textStyle="article-h-subheader"><h2>.fd-typography.article-h-subheader (tussenkop)</h2></TypoGraphy>
+            <TypoGraphy textStyle="article-h-longread-subheader"><h2>.fd-typography.article-h-longread-subheader (tussenkop)</h2></TypoGraphy>
             <TypoGraphy textStyle="article-h-inline-link-block"><h2>.fd-typography.article-h-inline-link-block</h2></TypoGraphy>
 
-            <TypoGraphy textStyle="article-h-subheader2"><h3>.fd-typography.article-h-subheader2</h3></TypoGraphy>
-            <TypoGraphy textStyle="article-h-longread-subheader2"><h3>.fd-typography.article-h-longread-subheader2</h3></TypoGraphy>
+            <TypoGraphy textStyle="article-h-subheader2"><h3>.fd-typography.article-h-subheader2 (subkop)</h3></TypoGraphy>
+            <TypoGraphy textStyle="article-h-longread-subheader2"><h3>.fd-typography.article-h-longread-subheader2 (subkop)</h3></TypoGraphy>
             <TypoGraphy textStyle="article-h-inline"><h3>.fd-typography.article-h-inline</h3></TypoGraphy>
             <TypoGraphy textStyle="article-h-longread-inline"><h3>.fd-typography.article-h-longread-inline</h3></TypoGraphy>
             <TypoGraphy textStyle="article-h-inline-stack-frame"><h3>.fd-typography.article-h-inline-stack-frame</h3></TypoGraphy>

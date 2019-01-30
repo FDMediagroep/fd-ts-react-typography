@@ -16,6 +16,7 @@ type HeadingTypes = 'page-h'
 | 'article-h-inline-number-frame'
 | 'article-h-longread-inline-number-frame'
 | 'article-h-subheader'
+| 'article-h-longread-subheader'
 | 'article-h-subheader2'
 | 'article-h-longread-subheader2'
 | 'article-h-inline'
@@ -226,11 +227,19 @@ export const headingStyles: TextStyle = {
     }`,
     'article-h-subheader': createGlobalStyle`
     .fd-typography.article-h-subheader {
+        margin-top: 36px;
+        margin-bottom: 0;
+        line-height: inherit;
+        padding: 0;
+        margin: 2.25rem 0 0 0;
+        font-family: 'ArnhemProBold', serif;
+        font-size: 1.375rem;
+    }`,
+    'article-h-longread-subheader': createGlobalStyle`
+    .fd-typography.article-h-longread-subheader {
         margin: 0;
         padding: 0;
         max-width: 719px;
-        padding-left: 0;
-        padding-right: 0;
         margin: 2.25rem auto 0 auto;
         font-size: 1.375rem;
         font-family: 'ArnhemProBold', serif;
