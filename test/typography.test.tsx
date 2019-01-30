@@ -27,11 +27,11 @@ describe('Typography', () => {
 
     test('renders figcaption correctly', () => {
         let figcaption = TestRenderer.create(
-            <TypoGraphy textStyle='article-figcaption-inline'><figcaption><span className="caption">caption text</span><span className="photographer">source: kitchensink</span></figcaption></TypoGraphy>
+            <TypoGraphy textStyle='article-inline-figcaption'><figcaption><span className="caption">caption text</span><span className="photographer">source: kitchensink</span></figcaption></TypoGraphy>
         );
         expect(figcaption.toJSON()).toMatchSnapshot();
         figcaption = TestRenderer.create(
-            <TypoGraphy textStyle='article-figcaption-longread-inline'><figcaption><span className="caption">article longread inline</span><span className="photographer">source: kitchensink</span></figcaption></TypoGraphy>
+            <TypoGraphy textStyle='article-longread-inline-figcaption'><figcaption><span className="caption">article longread inline</span><span className="photographer">source: kitchensink</span></figcaption></TypoGraphy>
         );
         expect(figcaption.toJSON()).toMatchSnapshot();
     });

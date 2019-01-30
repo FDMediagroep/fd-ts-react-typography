@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-type FigCaptionTypes = 'article-figcaption-inline' | 'article-figcaption-longread-inline';
+type FigCaptionTypes = 'article-inline-figcaption' | 'article-longread-inline-figcaption';
 
 type HeadingTypes = 'page-h'
 | 'article-h'
@@ -52,15 +52,17 @@ type ParagraphTypes = 'article-p'
 | 'article-p-inline-bullet-points'
 ;
 
-export type AllTypes = FigCaptionTypes | HeadingTypes | ParagraphTypes;
+type QuoteTypes = 'article-inline-quote' | 'article-longread-inline-quote' | 'article-persoonlijk-inline-quote';
+
+export type AllTypes = FigCaptionTypes | HeadingTypes | ParagraphTypes | QuoteTypes;
 
 type TextStyle = {
     [P in AllTypes]?: any
 };
 
 export const figcaptionStyles: TextStyle = {
-    'article-figcaption-inline': createGlobalStyle`
-    .fd-typography.article-figcaption-inline {
+    'article-inline-figcaption': createGlobalStyle`
+    .fd-typography.article-inline-figcaption {
         color: #4c4c4c;
         text-align: left;
         padding: 0.375rem 0;
@@ -76,8 +78,8 @@ export const figcaptionStyles: TextStyle = {
             color: #677381;
         }
     }`,
-    'article-figcaption-longread-inline': createGlobalStyle`
-    .fd-typography.article-figcaption-longread-inline {
+    'article-longread-inline-figcaption': createGlobalStyle`
+    .fd-typography.article-longread-inline-figcaption {
         color: rgba(0,0,0,0.5);
         text-align: left;
         padding: 0.375rem 0;
@@ -800,6 +802,94 @@ export const paragraphStyles: TextStyle = {
         font-size: 1.25rem;
         font-family: 'ProximaNovaRegular', sans-serif;
         line-height: 1.2;
+    }`,
+    'article-inline-quote': createGlobalStyle`
+    .fd-typography.article-inline-quote {
+        margin: 0;
+        padding: 0;
+        font-weight: normal;
+        blockquote {
+            color: #49a4a2;
+            display: inline;
+            margin-left: -6.5px;
+            line-height: 1.4;
+            font-size: 1rem;
+            font-family: 'ArnhemProBold', serif;
+            @media only screen and (min-width: 1025px) {
+                line-height: 1.28;
+                font-size: 1.9375rem;
+            }
+        }
+        figcaption {
+            color: #49a4a2;
+            font-family: 'ProximaNovaRegular', sans-serif;
+            font-size: 1rem;
+            line-height: 1.2em;
+            padding: 6px 0;
+            display: inline-block;
+            @media only screen and (min-width: 641px) {
+                font-size: 1.0625rem;
+            }
+        }
+    }`,
+    'article-longread-inline-quote': createGlobalStyle`
+    .fd-typography.article-longread-inline-quote {
+        margin: 0;
+        padding: 0;
+        font-weight: normal;
+        blockquote {
+            color: #f05031;
+            display: inline;
+            margin-left: -6.5px;
+            line-height: 1.4;
+            font-size: 1rem;
+            font-family: 'ArnhemProBold', serif;
+            @media only screen and (min-width: 1025px) {
+                line-height: 1.28;
+                font-size: 1.9375rem;
+            }
+        }
+        figcaption {
+            color: #f05031;
+            font-family: 'ProximaNovaRegular', sans-serif;
+            font-size: 1rem;
+            line-height: 1.2em;
+            padding: 6px 0;
+            display: inline-block;
+            @media only screen and (min-width: 641px) {
+                font-size: 1.0625rem;
+            }
+        }
+    }`,
+    'article-persoonlijk-inline-quote': createGlobalStyle`
+    .fd-typography.article-persoonlijk-inline-quote {
+        margin: 0;
+        padding: 0;
+        color: #e57e30;
+        font-weight: normal;
+        blockquote {
+            color: #e57e30;
+            display: inline;
+            margin-left: -6.5px;
+            line-height: 1.4;
+            font-size: 1rem;
+            font-family: 'ArnhemProBold', serif;
+            @media only screen and (min-width: 1025px) {
+                line-height: 1.28;
+                font-size: 1.9375rem;
+            }
+        }
+        figcaption {
+            color: #e57e30;
+            font-family: 'ProximaNovaRegular', sans-serif;
+            font-size: 1rem;
+            line-height: 1.2em;
+            padding: 6px 0;
+            display: inline-block;
+            @media only screen and (min-width: 641px) {
+                font-size: 1.0625rem;
+            }
+        }
     }`
 };
 

@@ -1,7 +1,8 @@
-declare type FigCaptionTypes = 'article-figcaption-inline' | 'article-figcaption-longread-inline';
+declare type FigCaptionTypes = 'article-inline-figcaption' | 'article-longread-inline-figcaption';
 declare type HeadingTypes = 'page-h' | 'article-h' | 'article-h-longread' | 'article-h-longread-persoonlijk' | 'opening-teaser-h' | 'teaser-h' | 'cover-teaser-h' | 'square-teaser-h' | 'service-h' | 'service-accordion-h' | 'my-news-aside-h' | 'article-h-inline-number-frame' | 'article-h-longread-inline-number-frame' | 'article-h-persoonlijk-inline-number-frame' | 'article-h-subheader' | 'article-h-longread-subheader' | 'article-h-subheader2' | 'article-h-longread-subheader2' | 'article-h-inline' | 'article-h-longread-inline' | 'article-h-persoonlijk-inline' | 'article-h-inline-stack-frame' | 'article-h-inline-link-block' | 'card-h' | 'card-h-longread' | 'card-h-persoonlijk';
 declare type ParagraphTypes = 'article-p' | 'article-p-persoonlijk' | 'article-p-longread' | 'article-p-longread-persoonlijk' | 'article-p-intro' | 'article-p-longread-intro' | 'article-p-inline-summary' | 'article-p-inline-number-frame' | 'article-p-longread-inline-number-frame' | 'article-p-persoonlijk-inline-number-frame' | 'article-p-inline-text-frame' | 'article-p-longread-inline-text-frame' | 'article-p-persoonlijk-inline-text-frame' | 'article-p-inline-stack-frame' | 'article-p-longread-inline-stack-frame' | 'article-p-persoonlijk-inline-stack-frame' | 'article-p-inline-link-block' | 'article-p-longread-inline-link-block' | 'article-p-persoonlijk-inline-link-block' | 'article-p-inline-bullet-points';
-export declare type AllTypes = FigCaptionTypes | HeadingTypes | ParagraphTypes;
+declare type QuoteTypes = 'article-inline-quote' | 'article-longread-inline-quote' | 'article-persoonlijk-inline-quote';
+export declare type AllTypes = FigCaptionTypes | HeadingTypes | ParagraphTypes | QuoteTypes;
 declare type TextStyle = {
     [P in AllTypes]?: any;
 };
@@ -9,8 +10,8 @@ export declare const figcaptionStyles: TextStyle;
 export declare const headingStyles: TextStyle;
 export declare const paragraphStyles: TextStyle;
 export declare const textStyles: {
-    "article-figcaption-inline"?: any;
-    "article-figcaption-longread-inline"?: any;
+    "article-inline-figcaption"?: any;
+    "article-longread-inline-figcaption"?: any;
     "page-h"?: any;
     "article-h"?: any;
     "article-h-longread"?: any;
@@ -57,5 +58,8 @@ export declare const textStyles: {
     "article-p-longread-inline-link-block"?: any;
     "article-p-persoonlijk-inline-link-block"?: any;
     "article-p-inline-bullet-points"?: any;
+    "article-inline-quote"?: any;
+    "article-longread-inline-quote"?: any;
+    "article-persoonlijk-inline-quote"?: any;
 };
 export {};

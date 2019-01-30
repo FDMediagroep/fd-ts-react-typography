@@ -107,8 +107,16 @@ ReactDOM.render(<>
 
         <fieldset>
             <legend>figcaption</legend>
-            <TypoGraphy textStyle="article-figcaption-inline"><figcaption><span className="caption">.fd-typography.article-figcaption-inline</span> <span className="photographer">source: kitchensink</span></figcaption></TypoGraphy>
-            <TypoGraphy textStyle="article-figcaption-longread-inline"><figcaption><span className="caption">.fd-typography.article-figcaption-longread-inline</span> <span className="photographer">source: kitchensink</span></figcaption></TypoGraphy>
+            <TypoGraphy textStyle="article-inline-figcaption"><figcaption><span className="caption">.fd-typography.article-inline-figcaption</span> <span className="photographer">source: kitchensink</span></figcaption></TypoGraphy>
+            <TypoGraphy textStyle="article-longread-inline-figcaption"><figcaption><span className="caption">.fd-typography.article-longread-inline-figcaption</span> <span className="photographer">source: kitchensink</span></figcaption></TypoGraphy>
         </fieldset>
+
+        <fieldset>
+            <legend>Quote</legend>
+            <TypoGraphy textStyle="article-inline-quote"><figure><blockquote>.fd-typography.article-inline-figcaption</blockquote> <figcaption>&middot; Quotee</figcaption></figure></TypoGraphy>
+            <TypoGraphy textStyle="article-longread-inline-quote"><figure><blockquote>.fd-typography.article-longread-inline-figcaption</blockquote> <figcaption>&middot; Quotee</figcaption></figure></TypoGraphy>
+            <TypoGraphy textStyle="article-persoonlijk-inline-quote"><figure><blockquote>.fd-typography.article-persoonlijk-inline-figcaption</blockquote> <figcaption>&middot; Quotee</figcaption></figure></TypoGraphy>
+        </fieldset>
+
     </>,
     document.getElementById('root'));

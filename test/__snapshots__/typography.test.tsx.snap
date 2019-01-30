@@ -2,7 +2,7 @@
 
 exports[`Typography renders figcaption correctly 1`] = `
 <figcaption
-  className="fd-typography article-figcaption-inline"
+  className="fd-typography article-inline-figcaption"
   textStyle={null}
 >
   <span
@@ -20,7 +20,7 @@ exports[`Typography renders figcaption correctly 1`] = `
 
 exports[`Typography renders figcaption correctly 2`] = `
 <figcaption
-  className="fd-typography article-figcaption-longread-inline"
+  className="fd-typography article-longread-inline-figcaption"
   textStyle={null}
 >
   <span
