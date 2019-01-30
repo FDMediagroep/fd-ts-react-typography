@@ -329,12 +329,12 @@ export const textStyles: TextStyle = {
         font-family: 'ProximaNovaRegular', sans-serif;
         line-height: 1.2;
     }`
-}
+};
 
 export default class TypoGraphy extends PureComponent<Props, any> {
     render() {
         const updatedChildren = React.Children.map(this.props.children, (child: any) => {
-            return React.cloneElement(child, {...this.props, className: `fd-typography ${this.props.textStyle}${this.props.className ? ` ${this.props.className}`: ''}`}, child.props.children);
+            return React.cloneElement(child, {...this.props, className: `fd-typography ${this.props.textStyle}${this.props.className ? ` ${this.props.className}` : ''}`}, child.props.children);
         });
         return (
             <>
