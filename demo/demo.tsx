@@ -63,7 +63,9 @@ ReactDOM.render(<>
             <TypoGraphy textStyle="article-p-longread-stack-frame"><p>.fd-typography.article-p-longread-stack-frame</p></TypoGraphy>
             <TypoGraphy textStyle="article-p-number-frame"><p>.fd-typography.article-p-number-frame</p></TypoGraphy>
             <TypoGraphy textStyle="article-p-longread-number-frame"><p>.fd-typography.article-p-longread-number-frame</p></TypoGraphy>
-            <TypoGraphy textStyle="article-p-text-frame"><p>.fd-typography.article-p-text-frame</p></TypoGraphy>
+            <div>
+                <TypoGraphy textStyle="article-p-text-frame"><p>.fd-typography.article-p-text-frame</p></TypoGraphy>
+            </div>
             <TypoGraphy textStyle="article-p-longread-text-frame"><p>.fd-typography.article-p-longread-text-frame</p></TypoGraphy>
             <TypoGraphy textStyle="article-p-longread-persoonlijk-text-frame"><p>.fd-typography.article-p-longread-persoonlijk-text-frame</p></TypoGraphy>
             <TypoGraphy textStyle="article-p-link-block"><p>.fd-typography.article-p-link-block</p></TypoGraphy>

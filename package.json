@@ -1,6 +1,6 @@
 {
   "name": "@fdmg/fd-typography",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "FD-themed typography",
   "types": "dist/typography.d.ts",
   "main": "dist/typography.js",
