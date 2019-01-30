@@ -2,9 +2,8 @@
 
 exports[`Typography renders figcaption correctly 1`] = `
 <figcaption
-  caption="caption text"
-  className="fd-figcaption article-inline"
-  photographer="source: kitchensink"
+  className="fd-typography article-figcaption-inline"
+  textStyle="article-figcaption-inline"
 >
   <span
     className="caption"
@@ -21,14 +20,13 @@ exports[`Typography renders figcaption correctly 1`] = `
 
 exports[`Typography renders figcaption correctly 2`] = `
 <figcaption
-  caption="caption text"
-  className="fd-figcaption article-longread-inline"
-  photographer="source: kitchensink"
+  className="fd-typography article-figcaption-longread-inline"
+  textStyle="article-figcaption-longread-inline"
 >
   <span
     className="caption"
   >
-    caption text
+    article longread inline
   </span>
   <span
     className="photographer"
@@ -38,66 +36,74 @@ exports[`Typography renders figcaption correctly 2`] = `
 </figcaption>
 `;
 
-exports[`Typography renders h1 correctly 1`] = `
+exports[`Typography renders heading correctly 1`] = `
 <h1
-  className="fd-h1"
+  className="fd-typography article-h-longread"
+  textStyle="article-h-longread"
 >
-  Default
+  longread
 </h1>
 `;
 
-exports[`Typography renders h1 correctly 2`] = `
+exports[`Typography renders heading correctly 2`] = `
 <h1
-  className="fd-h1 article-longread-persoonlijk"
+  className="fd-typography page-h"
+  textStyle="page-h"
 >
-  article-longread-persoonlijk
+  page
 </h1>
 `;
 
-exports[`Typography renders h2 correctly 1`] = `
+exports[`Typography renders heading correctly 3`] = `
 <h2
-  className="fd-h2"
+  className="fd-typography article-h-subheader"
+  textStyle="article-h-subheader"
 >
-  Default
+  subheader
 </h2>
 `;
 
-exports[`Typography renders h2 correctly 2`] = `
+exports[`Typography renders heading correctly 4`] = `
 <h2
-  className="fd-h2 article-inline"
+  className="fd-typography article-h-inline-number-frame"
+  textStyle="article-h-inline-number-frame"
 >
-  article-inline
+  number frame
 </h2>
 `;
 
-exports[`Typography renders h3 correctly 1`] = `
+exports[`Typography renders heading correctly 5`] = `
 <h3
-  className="fd-h3"
+  className="fd-typography article-h-subheader2"
+  textStyle="article-h-subheader2"
 >
-  Default
+  Card
 </h3>
 `;
 
-exports[`Typography renders h3 correctly 2`] = `
+exports[`Typography renders heading correctly 6`] = `
 <h3
-  className="fd-h3 card"
+  className="fd-typography card-h"
+  textStyle="card-h"
 >
-  card
+  Card
 </h3>
 `;
 
 exports[`Typography renders p correctly 1`] = `
 <p
-  className="fd-paragraph"
+  className="fd-typography article-p"
+  textStyle="article-p"
 >
-  Default
+  article
 </p>
 `;
 
 exports[`Typography renders p correctly 2`] = `
 <p
-  className="fd-paragraph article"
+  className="fd-typography article-p-longread"
+  textStyle="article-p-longread"
 >
-  article
+  article longread
 </p>
 `;
