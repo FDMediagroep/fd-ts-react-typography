@@ -3,6 +3,7 @@
 exports[`Typography renders figcaption correctly 1`] = `
 <figcaption
   className="fd-typography article-figcaption-inline"
+  textStyle={null}
 >
   <span
     className="caption"
@@ -20,6 +21,7 @@ exports[`Typography renders figcaption correctly 1`] = `
 exports[`Typography renders figcaption correctly 2`] = `
 <figcaption
   className="fd-typography article-figcaption-longread-inline"
+  textStyle={null}
 >
   <span
     className="caption"
@@ -37,6 +39,7 @@ exports[`Typography renders figcaption correctly 2`] = `
 exports[`Typography renders heading correctly 1`] = `
 <h1
   className="fd-typography article-h-longread"
+  textStyle={null}
 >
   longread
 </h1>
@@ -45,6 +48,7 @@ exports[`Typography renders heading correctly 1`] = `
 exports[`Typography renders heading correctly 2`] = `
 <h1
   className="fd-typography page-h"
+  textStyle={null}
 >
   page
 </h1>
@@ -53,6 +57,7 @@ exports[`Typography renders heading correctly 2`] = `
 exports[`Typography renders heading correctly 3`] = `
 <h2
   className="fd-typography article-h-subheader"
+  textStyle={null}
 >
   subheader
 </h2>
@@ -61,6 +66,7 @@ exports[`Typography renders heading correctly 3`] = `
 exports[`Typography renders heading correctly 4`] = `
 <h2
   className="fd-typography article-h-inline-number-frame"
+  textStyle={null}
 >
   number frame
 </h2>
@@ -69,6 +75,7 @@ exports[`Typography renders heading correctly 4`] = `
 exports[`Typography renders heading correctly 5`] = `
 <h3
   className="fd-typography article-h-subheader2"
+  textStyle={null}
 >
   Card
 </h3>
@@ -77,6 +84,7 @@ exports[`Typography renders heading correctly 5`] = `
 exports[`Typography renders heading correctly 6`] = `
 <h3
   className="fd-typography card-h"
+  textStyle={null}
 >
   Card
 </h3>
@@ -85,6 +93,7 @@ exports[`Typography renders heading correctly 6`] = `
 exports[`Typography renders p correctly 1`] = `
 <p
   className="fd-typography article-p"
+  textStyle={null}
 >
   article
 </p>
@@ -93,6 +102,7 @@ exports[`Typography renders p correctly 1`] = `
 exports[`Typography renders p correctly 2`] = `
 <p
   className="fd-typography article-p-longread"
+  textStyle={null}
 >
   article longread
 </p>
