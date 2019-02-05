@@ -1,7 +1,7 @@
 import { PureComponent } from 'react';
 import { AllTypes } from './styles';
 export interface Props {
-    textStyle: AllTypes;
+    textstyle: AllTypes;
     className?: string;
 }
 export default class TypoGraphy extends PureComponent<Props, any> {

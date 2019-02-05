@@ -405,7 +405,7 @@ export const headingStyles: TextStyle = {
         font-weight: normal;
         font-size: 1rem;
         @media only screen and (min-width: 641px) {
-            font-size: 1.25rem;
+            font-size: 1.125rem;
         }
     }`,
     'card-h-longread': createGlobalStyle`

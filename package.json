@@ -1,6 +1,6 @@
 {
   "name": "@fdmg/fd-typography",
-  "version": "1.0.19",
+  "version": "1.0.21",
   "description": "FD-themed typography",
   "types": "dist/typography.d.ts",
   "main": "dist/typography.js",
@@ -37,11 +37,11 @@
   "author": "Willem Liu",
   "license": "ISC",
   "devDependencies": {
-    "@types/jest": "^23.3.13",
-    "@types/react": "^16.7.22",
+    "@types/jest": "^23.3.14",
+    "@types/react": "^16.8.1",
     "@types/react-dom": "^16.0.11",
     "@types/react-test-renderer": "^16.0.3",
-    "@types/styled-components": "^4.1.6",
+    "@types/styled-components": "^4.1.8",
     "awesome-typescript-loader": "^5.2.1",
     "chokidar": "^2.0.4",
     "coveralls": "^3.0.2",
@@ -54,9 +54,9 @@
     "ts-jest": "^23.10.5",
     "tslint": "^5.12.1",
     "tslint-react": "^3.6.0",
-    "typescript": "^3.2.4",
-    "webpack": "^4.29.0",
-    "webpack-cli": "^3.2.1"
+    "typescript": "^3.3.1",
+    "webpack": "^4.29.1",
+    "webpack-cli": "^3.2.3"
   },
   "dependencies": {
     "react": "^16.7.0",
