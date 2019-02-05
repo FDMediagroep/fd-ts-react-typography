@@ -3,18 +3,18 @@ import { createGlobalStyle } from 'styled-components';
 import { textStyles, AllTypes } from './styles';
 
 export interface Props {
-    textstyle: AllTypes;
+    textStyle: AllTypes;
     className?: string;
 }
 
 export default class TypoGraphy extends PureComponent<Props, any> {
     render() {
         const updatedChildren = React.Children.map(this.props.children, (child: any) => {
-            return React.cloneElement(child, {...this.props, className: `fd-typography ${this.props.textstyle}${this.props.className ? ` ${this.props.className}` : ''}`, textStyle: null}, child.props.children);
+            return React.cloneElement(child, {...this.props, className: `fd-typography ${this.props.textStyle}${this.props.className ? ` ${this.props.className}` : ''}`, textstyle: undefined}, child.props.children);
         });
         return (
             <>
-                {React.createElement(textStyles[this.props.textstyle] as any, {}, null)}
+                {React.createElement(textStyles[this.props.textStyle] as any, {}, null)}
                 {updatedChildren}
             </>
         );
