@@ -4,11 +4,13 @@
 
 const webpack = require("webpack");
 const path = require('path');
+const NODE_ENV = JSON.stringify(process.env.NODE_ENV ? process.env.NODE_ENV : 'development');
+const devtool = NODE_ENV == '"development"' ? 'source-map' : undefined;
 
 console.info('process.env.NODE_ENV', JSON.stringify(process.env.NODE_ENV));
 
 module.exports = {
-    // devtool: "source-map",
+    devtool,
     entry: {
         "typography": ["./src/typography.tsx"]
     },
