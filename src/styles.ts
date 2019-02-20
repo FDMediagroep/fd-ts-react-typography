@@ -6,6 +6,7 @@ type HeadingTypes = 'page-h'
 | 'article-h'
 | 'article-h-longread'
 | 'article-h-longread-persoonlijk'
+| 'breaking-teaser-h'
 | 'opening-teaser-h'
 | 'teaser-h'
 | 'cover-teaser-h'
@@ -157,6 +158,21 @@ export const headingStyles: TextStyle = {
         }
         @media only screen and (min-width: 1025px) {
             font-size: 4.375rem;
+        }
+    }`,
+    'breaking-teaser-h': createGlobalStyle`
+    .fd-typography.breaking-teaser-h {
+        margin: 0;
+        padding: 0;
+        font-family: 'ArnhemProBold', serif;
+        line-height: 1.08em;
+        font-weight: normal;
+        font-size: 1.875rem;
+        @media only screen and (min-width: 641px) {
+            font-size: 2.8125rem;
+        }
+        @media only screen and (min-width: 1025px) {
+            font-size: 3.25rem;
         }
     }`,
     'opening-teaser-h': createGlobalStyle`

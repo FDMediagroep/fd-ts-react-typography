@@ -26,6 +26,7 @@ ReactDOM.render(<>
             <TypoGraphy textStyle="article-h"><h1>.fd-typography.article-h</h1></TypoGraphy>
             <TypoGraphy textStyle="service-h"><h1>.fd-typography.service-h</h1></TypoGraphy>
             <TypoGraphy textStyle="service-accordion-h"><h1><a>.fd-typography.service-accordion-h</a></h1></TypoGraphy>
+            <TypoGraphy textStyle="breaking-teaser-h"><h1>.fd-typography.breaking-teaser-h</h1></TypoGraphy>
             <TypoGraphy textStyle="opening-teaser-h"><h1>.fd-typography.opening-teaser-h</h1></TypoGraphy>
             <TypoGraphy textStyle="teaser-h"><h1>.fd-typography.teaser-h</h1></TypoGraphy>
             <TypoGraphy textStyle="cover-teaser-h"><h1>.fd-typography.cover-teaser-h</h1></TypoGraphy>
