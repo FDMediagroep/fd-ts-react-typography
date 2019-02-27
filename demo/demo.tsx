@@ -114,9 +114,9 @@ ReactDOM.render(<>
 
         <fieldset>
             <legend>Quote</legend>
-            <TypoGraphy textStyle="article-inline-quote"><figure><blockquote>.fd-typography.article-inline-figcaption</blockquote> <figcaption>&middot; Quotee</figcaption></figure></TypoGraphy>
-            <TypoGraphy textStyle="article-longread-inline-quote"><figure><blockquote>.fd-typography.article-longread-inline-figcaption</blockquote> <figcaption>&middot; Quotee</figcaption></figure></TypoGraphy>
-            <TypoGraphy textStyle="article-persoonlijk-inline-quote"><figure><blockquote>.fd-typography.article-persoonlijk-inline-figcaption</blockquote> <figcaption>&middot; Quotee</figcaption></figure></TypoGraphy>
+            <TypoGraphy textStyle="article-inline-quote"><figure><blockquote>.fd-typography.article-inline-figcaption</blockquote> <figcaption>- Quotee</figcaption></figure></TypoGraphy>
+            <TypoGraphy textStyle="article-longread-inline-quote"><figure><blockquote>.fd-typography.article-longread-inline-figcaption</blockquote> <figcaption>- Quotee</figcaption></figure></TypoGraphy>
+            <TypoGraphy textStyle="article-persoonlijk-inline-quote"><figure><blockquote>.fd-typography.article-persoonlijk-inline-figcaption</blockquote> <figcaption>- Quotee</figcaption></figure></TypoGraphy>
         </fieldset>
 
     </>,
