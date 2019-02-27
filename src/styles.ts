@@ -214,11 +214,8 @@ export const headingStyles: TextStyle = {
         font-family: 'ArnhemProBold', serif;
         line-height: 1.08em;
         font-weight: normal;
-        font-size: 1.125rem;
-        @media only screen and (min-width: 641px) {
-            font-size: 1.1875rem;
-        }
-        @media only screen and (min-width: 1025px) {
+        font-size: 1.375rem;
+        @media only screen and (min-width: 861px) {
             font-size: 1.25rem;
         }
     }`,
