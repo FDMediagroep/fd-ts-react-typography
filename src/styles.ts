@@ -134,11 +134,12 @@ export const headingStyles: TextStyle = {
     .fd-typography.article-h-longread {
         font-family: 'ConsortWebThin', serif;
         font-weight: normal;
-        margin: 15px 0 30px 0;
+        margin: 1rem 0;
         text-align: center;
-        font-size: 1.625rem;
+        font-size: 2rem;
         @media only screen and (min-width: 641px) {
             font-size: 3.4375rem;
+            margin: 1rem 0 2rem 0;
         }
         @media only screen and (min-width: 1025px) {
             font-size: 4.375rem;
