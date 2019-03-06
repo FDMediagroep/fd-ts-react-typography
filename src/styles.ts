@@ -6,6 +6,7 @@ type HeadingTypes = 'page-h'
 | 'article-h'
 | 'article-h-longread'
 | 'article-h-longread-persoonlijk'
+| 'breaking-teaser-h'
 | 'opening-teaser-h'
 | 'teaser-h'
 | 'cover-teaser-h'
@@ -133,11 +134,12 @@ export const headingStyles: TextStyle = {
     .fd-typography.article-h-longread {
         font-family: 'ConsortWebThin', serif;
         font-weight: normal;
-        margin: 15px 0 30px 0;
+        margin: 1rem 0;
         text-align: center;
-        font-size: 1.625rem;
+        font-size: 2rem;
         @media only screen and (min-width: 641px) {
             font-size: 3.4375rem;
+            margin: 1rem 0 2rem 0;
         }
         @media only screen and (min-width: 1025px) {
             font-size: 4.375rem;
@@ -157,6 +159,21 @@ export const headingStyles: TextStyle = {
         }
         @media only screen and (min-width: 1025px) {
             font-size: 4.375rem;
+        }
+    }`,
+    'breaking-teaser-h': createGlobalStyle`
+    .fd-typography.breaking-teaser-h {
+        margin: 0;
+        padding: 0;
+        font-family: 'ArnhemProBold', serif;
+        line-height: 1.08em;
+        font-weight: normal;
+        font-size: 1.875rem;
+        @media only screen and (min-width: 641px) {
+            font-size: 2.8125rem;
+        }
+        @media only screen and (min-width: 1025px) {
+            font-size: 3.25rem;
         }
     }`,
     'opening-teaser-h': createGlobalStyle`
@@ -197,11 +214,8 @@ export const headingStyles: TextStyle = {
         font-family: 'ArnhemProBold', serif;
         line-height: 1.08em;
         font-weight: normal;
-        font-size: 1.125rem;
-        @media only screen and (min-width: 641px) {
-            font-size: 1.1875rem;
-        }
-        @media only screen and (min-width: 1025px) {
+        font-size: 1.375rem;
+        @media only screen and (min-width: 861px) {
             font-size: 1.25rem;
         }
     }`,

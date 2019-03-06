@@ -26,6 +26,7 @@ ReactDOM.render(<>
             <TypoGraphy textStyle="article-h"><h1>.fd-typography.article-h</h1></TypoGraphy>
             <TypoGraphy textStyle="service-h"><h1>.fd-typography.service-h</h1></TypoGraphy>
             <TypoGraphy textStyle="service-accordion-h"><h1><a>.fd-typography.service-accordion-h</a></h1></TypoGraphy>
+            <TypoGraphy textStyle="breaking-teaser-h"><h1>.fd-typography.breaking-teaser-h</h1></TypoGraphy>
             <TypoGraphy textStyle="opening-teaser-h"><h1>.fd-typography.opening-teaser-h</h1></TypoGraphy>
             <TypoGraphy textStyle="teaser-h"><h1>.fd-typography.teaser-h</h1></TypoGraphy>
             <TypoGraphy textStyle="cover-teaser-h"><h1>.fd-typography.cover-teaser-h</h1></TypoGraphy>
@@ -113,9 +114,9 @@ ReactDOM.render(<>
 
         <fieldset>
             <legend>Quote</legend>
-            <TypoGraphy textStyle="article-inline-quote"><figure><blockquote>.fd-typography.article-inline-figcaption</blockquote> <figcaption>&middot; Quotee</figcaption></figure></TypoGraphy>
-            <TypoGraphy textStyle="article-longread-inline-quote"><figure><blockquote>.fd-typography.article-longread-inline-figcaption</blockquote> <figcaption>&middot; Quotee</figcaption></figure></TypoGraphy>
-            <TypoGraphy textStyle="article-persoonlijk-inline-quote"><figure><blockquote>.fd-typography.article-persoonlijk-inline-figcaption</blockquote> <figcaption>&middot; Quotee</figcaption></figure></TypoGraphy>
+            <TypoGraphy textStyle="article-inline-quote"><figure><blockquote>.fd-typography.article-inline-figcaption</blockquote> <figcaption>- Quotee</figcaption></figure></TypoGraphy>
+            <TypoGraphy textStyle="article-longread-inline-quote"><figure><blockquote>.fd-typography.article-longread-inline-figcaption</blockquote> <figcaption>- Quotee</figcaption></figure></TypoGraphy>
+            <TypoGraphy textStyle="article-persoonlijk-inline-quote"><figure><blockquote>.fd-typography.article-persoonlijk-inline-figcaption</blockquote> <figcaption>- Quotee</figcaption></figure></TypoGraphy>
         </fieldset>
 
     </>,
