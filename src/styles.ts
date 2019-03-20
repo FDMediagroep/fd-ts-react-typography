@@ -9,6 +9,7 @@ type HeadingTypes = 'page-h'
 | 'breaking-teaser-h'
 | 'opening-teaser-h'
 | 'teaser-h'
+| 'search-teaser-h'
 | 'cover-teaser-h'
 | 'square-teaser-h'
 | 'service-h'
@@ -196,6 +197,15 @@ export const headingStyles: TextStyle = {
         line-height: 1.08em;
         font-weight: normal;
         font-size: 1.375rem;
+    }`,
+    'search-teaser-h': createGlobalStyle`
+    .fd-typography.search-teaser-h {
+        margin: 0;
+        padding: 0;
+        font-family: 'ArnhemProBold', serif;
+        line-height: 1.5em;
+        font-weight: normal;
+        font-size: 1.5rem;
     }`,
     'cover-teaser-h': createGlobalStyle`
     .fd-typography.cover-teaser-h {

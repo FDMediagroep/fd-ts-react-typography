@@ -29,6 +29,7 @@ ReactDOM.render(<>
             <TypoGraphy textStyle="breaking-teaser-h"><h1>.fd-typography.breaking-teaser-h</h1></TypoGraphy>
             <TypoGraphy textStyle="opening-teaser-h"><h1>.fd-typography.opening-teaser-h</h1></TypoGraphy>
             <TypoGraphy textStyle="teaser-h"><h1>.fd-typography.teaser-h</h1></TypoGraphy>
+            <TypoGraphy textStyle="search-teaser-h"><h1>.fd-typography.search-teaser-h</h1></TypoGraphy>
             <TypoGraphy textStyle="cover-teaser-h"><h1>.fd-typography.cover-teaser-h</h1></TypoGraphy>
             <TypoGraphy textStyle="square-teaser-h"><h1>.fd-typography.square-teaser-h</h1></TypoGraphy>
             <TypoGraphy textStyle="my-news-aside-h"><h1>.fd-typography.my-news-aside-h</h1></TypoGraphy>
