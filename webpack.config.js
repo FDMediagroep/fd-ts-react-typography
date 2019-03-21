@@ -11,6 +11,10 @@ console.info('process.env.NODE_ENV', JSON.stringify(process.env.NODE_ENV));
 
 module.exports = {
     devtool,
+    stats: {
+        modules: true,
+        modulesSort: 'size'
+    },
     entry: {
         "typography": ["./src/typography.tsx"]
     },
@@ -26,11 +30,7 @@ module.exports = {
         publicPath : ''
     },
     resolve: {
-        extensions: ['.js', '.jsx', '.ts', '.tsx']/*,
-        alias: {
-            'react': 'preact-compat',
-            'react-dom': 'preact-compat'
-        }*/
+        extensions: ['.js', '.jsx', '.ts', '.tsx']
     },
     externals: {
         'react': 'react',
