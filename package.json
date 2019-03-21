@@ -17,7 +17,7 @@
   "scripts": {
     "build-demo": "npm run copy-demo-html && cross-env NODE_ENV=production webpack --mode=production --config webpack.demo.config.js",
     "build-dev": "webpack --mode=development",
-    "build-prod": "cross-env NODE_ENV=production webpack --mode=production",
+    "build-prod": "cross-env NODE_ENV=production webpack --mode=production --display-modules",
     "copy-demo-html": "cpx -p -v \"demo/**/*.html\" \"dist/\"",
     "lint": "tslint -p .",
     "release": "npm update && npm i && npm run test && npm run lint && npm run build-prod",
