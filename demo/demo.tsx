@@ -15,12 +15,17 @@ const GlobalStyles = createGlobalStyle`
         display: flex;
         flex-direction: column;
     }
+
+    legend {
+        font-size: 2rem;
+        font-family: sans-serif;
+    }
 `;
 
 ReactDOM.render(<>
         <GlobalStyles/>
         <fieldset>
-            <legend>heading</legend>
+            <legend>Heading</legend>
             <TypoGraphy textStyle="article-h-longread-persoonlijk"><h1>.fd-typography.article-h-longread-persoonlijk</h1></TypoGraphy>
             <TypoGraphy textStyle="article-h-longread"><h1>.fd-typography.article-h-longread</h1></TypoGraphy>
             <TypoGraphy textStyle="article-h"><h1>.fd-typography.article-h</h1></TypoGraphy>
@@ -53,7 +58,7 @@ ReactDOM.render(<>
         </fieldset>
 
         <fieldset>
-            <legend>paragraphs</legend>
+            <legend>Paragraphs</legend>
             <TypoGraphy textStyle="article-p-intro"><p>.fd-typography.article-p-intro</p></TypoGraphy>
             <TypoGraphy textStyle="article-p-longread-intro"><p>.fd-typography.article-p-longread-intro</p></TypoGraphy>
             <div>
@@ -108,7 +113,7 @@ ReactDOM.render(<>
         </fieldset>
 
         <fieldset>
-            <legend>figcaption</legend>
+            <legend>Figcaption</legend>
             <TypoGraphy textStyle="article-inline-figcaption"><figcaption><span className="caption">.fd-typography.article-inline-figcaption</span> <span className="photographer">source: kitchensink</span></figcaption></TypoGraphy>
             <TypoGraphy textStyle="article-longread-inline-figcaption"><figcaption><span className="caption">.fd-typography.article-longread-inline-figcaption</span> <span className="photographer">source: kitchensink</span></figcaption></TypoGraphy>
         </fieldset>

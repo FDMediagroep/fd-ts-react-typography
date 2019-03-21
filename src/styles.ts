@@ -424,12 +424,12 @@ export const headingStyles: TextStyle = {
         box-sizing: border-box;
         display: block;
         color: #49a4a2;
-        font-family: 'ProximaNovaBold', sans-serif;
+        font-family: 'ProximaNova', sans-serif;
         line-height: 1.2em;
-        font-weight: normal;
+        font-weight: 600;
         font-size: 1rem;
         @media only screen and (min-width: 641px) {
-            font-size: 1.125rem;
+            font-size: 1.0625rem;
         }
     }`,
     'card-h-longread': createGlobalStyle`

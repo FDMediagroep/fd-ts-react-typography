@@ -1,6 +1,6 @@
 {
   "name": "@fdmg/fd-typography",
-  "version": "1.0.28",
+  "version": "1.0.29",
   "description": "FD-themed typography",
   "types": "dist/typography.d.ts",
   "main": "dist/typography.js",
@@ -39,7 +39,7 @@
   "devDependencies": {
     "@types/jest": "^24.0.11",
     "@types/react": "^16.8.8",
-    "@types/react-dom": "^16.8.2",
+    "@types/react-dom": "^16.8.3",
     "@types/react-test-renderer": "^16.8.1",
     "@types/styled-components": "4.1.10",
     "@types/webpack-env": "^1.13.9",
