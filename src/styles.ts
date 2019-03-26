@@ -835,7 +835,7 @@ export const paragraphStyles: TextStyle = {
         blockquote {
             color: #49a4a2;
             display: inline;
-            margin-left: -6.5px;
+            margin: 0 0 0 -6.5px;
             line-height: 1.4;
             font-size: 1rem;
             font-family: 'ArnhemProBold', serif;
@@ -864,7 +864,7 @@ export const paragraphStyles: TextStyle = {
         blockquote {
             color: #f05031;
             display: inline;
-            margin-left: -6.5px;
+            margin: 0 0 0 -6.5px;
             line-height: 1.4;
             font-size: 1rem;
             font-family: 'ArnhemProBold', serif;
@@ -894,7 +894,7 @@ export const paragraphStyles: TextStyle = {
         blockquote {
             color: #e57e30;
             display: inline;
-            margin-left: -6.5px;
+            margin: 0 0 0 -6.5px;
             line-height: 1.4;
             font-size: 1rem;
             font-family: 'ArnhemProBold', serif;
