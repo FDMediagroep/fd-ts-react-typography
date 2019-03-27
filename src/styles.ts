@@ -546,7 +546,7 @@ export const paragraphStyles: TextStyle = {
         &:first-of-type::first-letter {
             font-size: 6rem;
             line-height: .8;
-            margin: 0 1rem 0 -1rem;
+            margin: 0 .5rem 0 -.5rem;
             float: left;
             color: #f05031;
             text-transform: capitalize;
@@ -585,7 +585,7 @@ export const paragraphStyles: TextStyle = {
         &:first-of-type::first-letter {
             font-size: 6rem;
             line-height: .8;
-            margin: 0 1rem 0 -1rem;
+            margin: 0 .5rem 0 -.5rem;
             float: left;
             color: #e57e30;
             text-transform: capitalize;
