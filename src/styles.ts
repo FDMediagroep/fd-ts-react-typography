@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { css } from "styled-components";
 
 type FigCaptionTypes = 'article-inline-figcaption' | 'article-longread-inline-figcaption';
 
@@ -63,7 +63,7 @@ type TextStyle = {
 };
 
 export const figcaptionStyles: TextStyle = {
-    'article-inline-figcaption': createGlobalStyle`
+    'article-inline-figcaption': css`
     .fd-typography.article-inline-figcaption {
         color: #4c4c4c;
         text-align: left;
@@ -80,7 +80,7 @@ export const figcaptionStyles: TextStyle = {
             color: #677381;
         }
     }`,
-    'article-longread-inline-figcaption': createGlobalStyle`
+    'article-longread-inline-figcaption': css`
     .fd-typography.article-longread-inline-figcaption {
         color: rgba(0,0,0,0.5);
         text-align: left;
@@ -100,7 +100,7 @@ export const figcaptionStyles: TextStyle = {
 };
 
 export const headingStyles: TextStyle = {
-    'page-h': createGlobalStyle`
+    'page-h': css`
     .fd-typography.page-h {
         margin: 0;
         padding: 0;
@@ -115,7 +115,7 @@ export const headingStyles: TextStyle = {
             font-size: 3.25rem;
         }
     }`,
-    'article-h': createGlobalStyle`
+    'article-h': css`
     .fd-typography.article-h {
         margin: 0;
         padding: 0;
@@ -131,7 +131,7 @@ export const headingStyles: TextStyle = {
             font-size: 3.25rem;
         }
     }`,
-    'article-h-longread': createGlobalStyle`
+    'article-h-longread': css`
     .fd-typography.article-h-longread {
         font-family: 'ConsortWebThin', serif;
         font-weight: normal;
@@ -146,7 +146,7 @@ export const headingStyles: TextStyle = {
             font-size: 4.375rem;
         }
     }`,
-    'article-h-longread-persoonlijk': createGlobalStyle`
+    'article-h-longread-persoonlijk': css`
     .fd-typography.article-h-longread-persoonlijk {
         margin: 15px 0 30px 0;
         padding: 0;
@@ -162,7 +162,7 @@ export const headingStyles: TextStyle = {
             font-size: 4.375rem;
         }
     }`,
-    'breaking-teaser-h': createGlobalStyle`
+    'breaking-teaser-h': css`
     .fd-typography.breaking-teaser-h {
         margin: 0;
         padding: 0;
@@ -177,7 +177,7 @@ export const headingStyles: TextStyle = {
             font-size: 3.25rem;
         }
     }`,
-    'opening-teaser-h': createGlobalStyle`
+    'opening-teaser-h': css`
     .fd-typography.opening-teaser-h {
         margin: 0;
         padding: 0;
@@ -189,7 +189,7 @@ export const headingStyles: TextStyle = {
             font-size: 1.8125rem;
         }
     }`,
-    'teaser-h': createGlobalStyle`
+    'teaser-h': css`
     .fd-typography.teaser-h {
         margin: 0;
         padding: 0;
@@ -198,7 +198,7 @@ export const headingStyles: TextStyle = {
         font-weight: normal;
         font-size: 1.375rem;
     }`,
-    'search-teaser-h': createGlobalStyle`
+    'search-teaser-h': css`
     .fd-typography.search-teaser-h {
         margin: 0;
         padding: 0;
@@ -207,7 +207,7 @@ export const headingStyles: TextStyle = {
         font-weight: normal;
         font-size: 1.5rem;
     }`,
-    'cover-teaser-h': createGlobalStyle`
+    'cover-teaser-h': css`
     .fd-typography.cover-teaser-h {
         margin: 0;
         padding: 0;
@@ -217,7 +217,7 @@ export const headingStyles: TextStyle = {
         font-size: 1.375rem;
         color: white;
     }`,
-    'square-teaser-h': createGlobalStyle`
+    'square-teaser-h': css`
     .fd-typography.square-teaser-h {
         margin: 0;
         padding: 0;
@@ -229,7 +229,7 @@ export const headingStyles: TextStyle = {
             font-size: 1.25rem;
         }
     }`,
-    'service-h': createGlobalStyle`
+    'service-h': css`
     .fd-typography.service-h {
         margin: 0;
         padding: 0;
@@ -240,7 +240,7 @@ export const headingStyles: TextStyle = {
         font-weight: normal;
         font-size: 1.875rem;
     }`,
-    'service-accordion-h': createGlobalStyle`
+    'service-accordion-h': css`
     .fd-typography.service-accordion-h {
         margin: 0;
         padding: 0;
@@ -259,7 +259,7 @@ export const headingStyles: TextStyle = {
             font-weight: normal;
         }
     }`,
-    'my-news-aside-h': createGlobalStyle`
+    'my-news-aside-h': css`
     .fd-typography.my-news-aside-h {
         margin: 0;
         padding: 0;
@@ -272,7 +272,7 @@ export const headingStyles: TextStyle = {
             font-size: 1.125rem;
         }
     }`,
-    'article-h-subheader': createGlobalStyle`
+    'article-h-subheader': css`
     .fd-typography.article-h-subheader {
         margin-top: 36px;
         margin-bottom: 0;
@@ -283,7 +283,7 @@ export const headingStyles: TextStyle = {
         font-weight: normal;
         font-size: 1.375rem;
     }`,
-    'article-h-longread-subheader': createGlobalStyle`
+    'article-h-longread-subheader': css`
     .fd-typography.article-h-longread-subheader {
         margin: 0;
         padding: 0;
@@ -293,7 +293,7 @@ export const headingStyles: TextStyle = {
         font-size: 1.375rem;
         font-family: 'ArnhemProBold', serif;
     }`,
-    'article-h-inline-number-frame': createGlobalStyle`
+    'article-h-inline-number-frame': css`
     .fd-typography.article-h-inline-number-frame {
         margin: 0;
         padding: 0;
@@ -303,7 +303,7 @@ export const headingStyles: TextStyle = {
         font-family: 'ConsortWebRegular', serif;
         line-height: 1em;
     }`,
-    'article-h-longread-inline-number-frame': createGlobalStyle`
+    'article-h-longread-inline-number-frame': css`
     .fd-typography.article-h-longread-inline-number-frame {
         margin: 0;
         padding: 0;
@@ -313,7 +313,7 @@ export const headingStyles: TextStyle = {
         font-family: 'ConsortWebRegular', serif;
         line-height: 1em;
     }`,
-    'article-h-persoonlijk-inline-number-frame': createGlobalStyle`
+    'article-h-persoonlijk-inline-number-frame': css`
     .fd-typography.article-h-persoonlijk-inline-number-frame {
         margin: 0;
         padding: 0;
@@ -323,7 +323,7 @@ export const headingStyles: TextStyle = {
         font-family: 'ConsortWebRegular', serif;
         line-height: 1em;
     }`,
-    'article-h-inline-link-block': createGlobalStyle`
+    'article-h-inline-link-block': css`
     .fd-typography.article-h-inline-link-block {
         margin: 0;
         padding: 0;
@@ -333,7 +333,7 @@ export const headingStyles: TextStyle = {
         font-family: 'ProximaNovaRegular', sans-serif;
         line-height: 1.2em;
     }`,
-    'article-h-subheader2': createGlobalStyle`
+    'article-h-subheader2': css`
     .fd-typography.article-h-subheader2 {
         margin: 0;
         padding: 0;
@@ -348,7 +348,7 @@ export const headingStyles: TextStyle = {
             font-size: 2.8125rem;
         }
     }`,
-    'article-h-longread-subheader2': createGlobalStyle`
+    'article-h-longread-subheader2': css`
     .fd-typography.article-h-longread-subheader2 {
         margin: 0;
         padding: 0;
@@ -364,7 +364,7 @@ export const headingStyles: TextStyle = {
             font-size: 2.8125rem;
         }
     }`,
-    'article-h-inline': createGlobalStyle`
+    'article-h-inline': css`
     .fd-typography.article-h-inline {
         margin: 0;
         padding: 0;
@@ -377,7 +377,7 @@ export const headingStyles: TextStyle = {
         color: #49a4a2;
         margin-bottom: 1rem;
     }`,
-    'article-h-longread-inline': createGlobalStyle`
+    'article-h-longread-inline': css`
     .fd-typography.article-h-longread-inline {
         margin: 0;
         padding: 0;
@@ -390,7 +390,7 @@ export const headingStyles: TextStyle = {
         color: #f05031;
         margin-bottom: 1rem;
     }`,
-    'article-h-persoonlijk-inline': createGlobalStyle`
+    'article-h-persoonlijk-inline': css`
     .fd-typography.article-h-persoonlijk-inline {
         margin: 0;
         padding: 0;
@@ -403,7 +403,7 @@ export const headingStyles: TextStyle = {
         color: #e57e30;
         margin-bottom: 1rem;
     }`,
-    'article-h-inline-stack-frame': createGlobalStyle`
+    'article-h-inline-stack-frame': css`
     .fd-typography.article-h-inline-stack-frame {
         margin: 0;
         padding: 0;
@@ -417,7 +417,7 @@ export const headingStyles: TextStyle = {
         line-height: 2.025rem;
         margin: 0;
     }`,
-    'card-h': createGlobalStyle`
+    'card-h': css`
     .fd-typography.card-h {
         margin: 0;
         padding: 0;
@@ -432,7 +432,7 @@ export const headingStyles: TextStyle = {
             font-size: 1.0625rem;
         }
     }`,
-    'card-h-longread': createGlobalStyle`
+    'card-h-longread': css`
     .fd-typography.card-h-longread {
         margin: 0;
         padding: 0;
@@ -447,7 +447,7 @@ export const headingStyles: TextStyle = {
             font-size: 1.25rem;
         }
     }`,
-    'card-h-persoonlijk': createGlobalStyle`
+    'card-h-persoonlijk': css`
     .fd-typography.card-h-persoonlijk {
         margin: 0;
         padding: 0;
@@ -465,7 +465,7 @@ export const headingStyles: TextStyle = {
 };
 
 export const paragraphStyles: TextStyle = {
-    'article-p':  createGlobalStyle`
+    'article-p':  css`
     .fd-typography.article-p {
         margin: 0;
         padding: 0;
@@ -492,7 +492,7 @@ export const paragraphStyles: TextStyle = {
             text-decoration: none;
         }
     }`,
-    'article-p-persoonlijk':  createGlobalStyle`
+    'article-p-persoonlijk':  css`
     .fd-typography.article-p-persoonlijk {
         margin: 0;
         padding: 0;
@@ -519,7 +519,7 @@ export const paragraphStyles: TextStyle = {
             text-decoration: none;
         }
     }`,
-    'article-p-longread':  createGlobalStyle`
+    'article-p-longread':  css`
     .fd-typography.article-p-longread {
         margin: 0;
         padding: 0;
@@ -558,7 +558,7 @@ export const paragraphStyles: TextStyle = {
             text-decoration: none;
         }
     }`,
-    'article-p-longread-persoonlijk':  createGlobalStyle`
+    'article-p-longread-persoonlijk':  css`
     .fd-typography.article-p-longread-persoonlijk {
         margin: 0;
         padding: 0;
@@ -597,7 +597,7 @@ export const paragraphStyles: TextStyle = {
             text-decoration: none;
         }
     }`,
-    'article-p-intro': createGlobalStyle`
+    'article-p-intro': css`
     .fd-typography.article-p-intro {
         margin: 0;
         padding: 0;
@@ -616,7 +616,7 @@ export const paragraphStyles: TextStyle = {
         line-height: 1.2em;
         font-family: 'ArnhemProBlond', serif;
     }`,
-    'article-p-longread-intro': createGlobalStyle`
+    'article-p-longread-intro': css`
     .fd-typography.article-p-longread-intro {
         margin: 0;
         padding: 0;
@@ -636,7 +636,7 @@ export const paragraphStyles: TextStyle = {
         text-align: center;
         font-family: 'ConsortWebBold', serif;
     }`,
-    'article-p-inline-summary': createGlobalStyle`
+    'article-p-inline-summary': css`
     .fd-typography.article-p-inline-summary {
         margin: 0;
         padding: 0;
@@ -648,7 +648,7 @@ export const paragraphStyles: TextStyle = {
         line-height: 1.2;
         margin: 0 0 0.9375rem 0;
     }`,
-    'article-p-inline-number-frame': createGlobalStyle`
+    'article-p-inline-number-frame': css`
     .fd-typography.article-p-inline-number-frame {
         margin: 0;
         padding: 0;
@@ -659,7 +659,7 @@ export const paragraphStyles: TextStyle = {
         line-height: 1.2;
         margin: 0 0 0.65625rem 0;
     }`,
-    'article-p-longread-inline-number-frame': createGlobalStyle`
+    'article-p-longread-inline-number-frame': css`
     .fd-typography.article-p-longread-inline-number-frame {
         margin: 0;
         padding: 0;
@@ -670,7 +670,7 @@ export const paragraphStyles: TextStyle = {
         line-height: 1.2;
         margin: 0 0 0.65625rem 0;
     }`,
-    'article-p-persoonlijk-inline-number-frame': createGlobalStyle`
+    'article-p-persoonlijk-inline-number-frame': css`
     .fd-typography.article-p-persoonlijk-inline-number-frame {
         margin: 0;
         padding: 0;
@@ -681,7 +681,7 @@ export const paragraphStyles: TextStyle = {
         line-height: 1.2;
         margin: 0 0 0.65625rem 0;
     }`,
-    'article-p-inline-text-frame': createGlobalStyle`
+    'article-p-inline-text-frame': css`
     .fd-typography.article-p-inline-text-frame {
         margin: 0;
         padding: 0;
@@ -701,7 +701,7 @@ export const paragraphStyles: TextStyle = {
             margin: 3px 5px 0 0;
         }
     }`,
-    'article-p-longread-inline-text-frame': createGlobalStyle`
+    'article-p-longread-inline-text-frame': css`
     .fd-typography.article-p-longread-inline-text-frame {
         margin: 0;
         padding: 0;
@@ -721,7 +721,7 @@ export const paragraphStyles: TextStyle = {
             margin: 3px 5px 0 0;
         }
     }`,
-    'article-p-persoonlijk-inline-text-frame': createGlobalStyle`
+    'article-p-persoonlijk-inline-text-frame': css`
     .fd-typography.article-p-persoonlijk-inline-text-frame {
         margin: 0;
         padding: 0;
@@ -741,7 +741,7 @@ export const paragraphStyles: TextStyle = {
             margin: 3px 5px 0 0;
         }
     }`,
-    'article-p-inline-stack-frame': createGlobalStyle`
+    'article-p-inline-stack-frame': css`
     .fd-typography.article-p-inline-stack-frame {
         margin: 0;
         padding: 0;
@@ -753,7 +753,7 @@ export const paragraphStyles: TextStyle = {
         line-height: 2.025rem;
         margin: 0;
     }`,
-    'article-p-longread-inline-stack-frame': createGlobalStyle`
+    'article-p-longread-inline-stack-frame': css`
     .fd-typography.article-p-longread-inline-stack-frame {
         margin: 0;
         padding: 0;
@@ -765,7 +765,7 @@ export const paragraphStyles: TextStyle = {
         line-height: 2.025rem;
         margin: 0;
     }`,
-    'article-p-persoonlijk-inline-stack-frame': createGlobalStyle`
+    'article-p-persoonlijk-inline-stack-frame': css`
     .fd-typography.article-p-persoonlijk-inline-stack-frame {
         margin: 0;
         padding: 0;
@@ -777,7 +777,7 @@ export const paragraphStyles: TextStyle = {
         line-height: 2.025rem;
         margin: 0;
     }`,
-    'article-p-inline-link-block': createGlobalStyle`
+    'article-p-inline-link-block': css`
     .fd-typography.article-p-inline-link-block {
         margin: 0;
         padding: 0;
@@ -790,7 +790,7 @@ export const paragraphStyles: TextStyle = {
             font-size: 1.125rem;
         }
     }`,
-    'article-p-longread-inline-link-block': createGlobalStyle`
+    'article-p-longread-inline-link-block': css`
     .fd-typography.article-p-longread-inline-link-block {
         margin: 0;
         padding: 0;
@@ -803,7 +803,7 @@ export const paragraphStyles: TextStyle = {
             font-size: 1.125rem;
         }
     }`,
-    'article-p-persoonlijk-inline-link-block': createGlobalStyle`
+    'article-p-persoonlijk-inline-link-block': css`
     .fd-typography.article-p-persoonlijk-inline-link-block {
         margin: 0;
         padding: 0;
@@ -816,7 +816,7 @@ export const paragraphStyles: TextStyle = {
             font-size: 1.125rem;
         }
     }`,
-    'article-p-inline-bullet-points': createGlobalStyle`
+    'article-p-inline-bullet-points': css`
     .fd-typography.article-p-inline-bullet-points {
         margin: 0;
         padding: 0;
@@ -827,7 +827,7 @@ export const paragraphStyles: TextStyle = {
         font-family: 'ProximaNovaRegular', sans-serif;
         line-height: 1.2;
     }`,
-    'article-inline-quote': createGlobalStyle`
+    'article-inline-quote': css`
     .fd-typography.article-inline-quote {
         margin: 0;
         padding: 0;
@@ -856,7 +856,7 @@ export const paragraphStyles: TextStyle = {
             }
         }
     }`,
-    'article-longread-inline-quote': createGlobalStyle`
+    'article-longread-inline-quote': css`
     .fd-typography.article-longread-inline-quote {
         margin: 0;
         padding: 0;
@@ -885,7 +885,7 @@ export const paragraphStyles: TextStyle = {
             }
         }
     }`,
-    'article-persoonlijk-inline-quote': createGlobalStyle`
+    'article-persoonlijk-inline-quote': css`
     .fd-typography.article-persoonlijk-inline-quote {
         margin: 0;
         padding: 0;

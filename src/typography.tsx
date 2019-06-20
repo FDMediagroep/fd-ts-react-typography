@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { createGlobalStyle } from 'styled-components';
+import { css, createGlobalStyle } from 'styled-components';
 import { textStyles, AllTypes } from './styles';
 
 export interface Props {
@@ -14,7 +14,7 @@ export default class TypoGraphy extends PureComponent<Props, any> {
         });
         return (
             <>
-                {React.createElement(textStyles[this.props.textStyle] as any, {}, null)}
+                {React.createElement(createGlobalStyle(textStyles[this.props.textStyle]), {}, null)}
                 {updatedChildren}
             </>
         );
@@ -31,9 +31,9 @@ export function getAllTextStyles(filter?: AllTypes[]) {
     for (const key in tmp) {
         if (filter && filter.indexOf(key as any) === -1) { continue; }
         if (result) {
-            result = createGlobalStyle`${result.globalStyle.rules}${tmp[key].globalStyle.rules}`;
+            result = css`${result}${tmp[key]}`;
         } else {
-            result = createGlobalStyle`${tmp[key].globalStyle.rules}`;
+            result = css`${tmp[key]}`;
         }
     }
     return result;
