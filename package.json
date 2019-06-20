@@ -1,6 +1,6 @@
 {
   "name": "@fdmg/fd-typography",
-  "version": "1.0.31",
+  "version": "2.0.0",
   "description": "FD-themed typography",
   "types": "dist/typography.d.ts",
   "main": "dist/typography.js",
@@ -44,7 +44,7 @@
     "@types/styled-components": "4.1.10",
     "@types/webpack-env": "^1.13.9",
     "awesome-typescript-loader": "^5.2.1",
-    "chokidar": "^2.1.6",
+    "chokidar": "^3.0.1",
     "coveralls": "^3.0.4",
     "cpx": "^1.5.0",
     "cross-env": "^5.2.0",
