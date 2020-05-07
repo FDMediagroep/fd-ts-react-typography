@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/FDMediagroep/fd-ts-react-typography.svg?branch=master)](https://travis-ci.org/FDMediagroep/fd-ts-react-typography)
 [![Coverage Status](https://coveralls.io/repos/github/FDMediagroep/fd-ts-react-typography/badge.svg?branch=master)](https://coveralls.io/github/FDMediagroep/fd-ts-react-typography?branch=master)
 [![npm version](https://badge.fury.io/js/%40fdmg%2Ffd-typography.svg)](https://badge.fury.io/js/%40fdmg%2Ffd-typography)
-[![Greenkeeper badge](https://badges.greenkeeper.io/FDMediagroep/fd-ts-react-typography.svg)](https://greenkeeper.io/)
+
 
 # fd-typography
 
